@@ -67,10 +67,16 @@ struct LoadingSection: View {
 			.padding(.vertical, 4)
 			
 			if !fetcher.errors.isEmpty {
-				NavigationLink {
-					errorList()
-				} label: {
-					Text("\(fetcher.errors.count) Error(s)", comment: "Stats: match loading")
+				VStack(alignment: .leading, spacing: 4) {
+					NavigationLink {
+						errorList()
+					} label: {
+						Text("\(fetcher.errors.count) Error(s)", comment: "Stats: match loading")
+					}
+					
+					Text("The remaining \(fetcher.matches.count) match(es) loaded correctly and are displayed below.", comment: "Stats: match loading")
+						.font(.footnote)
+						.foregroundStyle(.secondary)
 				}
 			}
 		} header: {
@@ -79,14 +85,11 @@ struct LoadingSection: View {
 			let fetchedCount = sublist.count { fetcher.matches.keys.contains($0.id) }
 			Text("\(fetchedCount)/\(fetchCount) loaded", comment: "Stats: match loading")
 		}
-		.onReceive(
-			fetcher.objectWillChange
-				.debounce(for: 0.2, scheduler: DispatchQueue.main),
-			perform: { _ in
-				print("received")
-				fetchedMatches = sublist.compactMap { fetcher.matches[$0.id] }
-			}
-		)
+		.onReceive(fetcher.objectWillChange
+			.debounce(for: 0.2, scheduler: DispatchQueue.main)
+		) { _ in
+			fetchedMatches = sublist.compactMap { fetcher.matches[$0.id] }
+		}
 	}
 	
 	func errorList() -> some View {
@@ -156,9 +159,11 @@ struct LoadingSection: View {
 private final class MatchFetcher: ObservableObject {
 	@Published var matches: [Match.ID: MatchDetails] = [:]
 	@Published var errors: [Match.ID: Error] = [:]
+	@Published var fetchCount = 0 // so fetching less matches still changes the object
 	private var tokens: [Match.ID: AnyCancellable] = [:]
 	
-	func fetchMatches(withIDs ids: some Sequence<Match.ID>, load: @escaping ValorantLoadFunction) {
+	func fetchMatches(withIDs ids: some Collection<Match.ID>, load: @escaping ValorantLoadFunction) {
+		fetchCount = ids.count
 		for match in ids {
 			guard tokens[match] == nil else { continue }
 			tokens[match] = LocalDataProvider.shared.matchDetailsManager
