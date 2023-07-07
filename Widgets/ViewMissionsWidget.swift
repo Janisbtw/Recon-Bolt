@@ -15,7 +15,7 @@ struct ViewMissionsWidget: Widget {
 			MissionListView(entry: entry)
 				.reloadingOnTap(.viewMissions)
 		}
-		.supportedFamilies([.systemSmall, .systemMedium])
+		.supportedFamilies([.systemMedium])
 		.configurationDisplayName(Text("Missions", comment: "Missions Widget: title"))
 		.description(Text("Check your progress on daily & weekly missions.", comment: "Missions Widget: description"))
 	}
@@ -24,107 +24,113 @@ struct ViewMissionsWidget: Widget {
 struct MissionListView: TimelineEntryView {
 	var entry: ContractsEntryProvider.Entry
 	
-	@Environment(\.adjustedWidgetFamily) private var widgetFamily
-	
 	func contents(for value: ContractDetailsInfo) -> some View {
 		let contracts = value.contracts
-		HStack(alignment: .top, spacing: 0) {
-			Spacer()
-			
-			CurrentMissionsList(
+		Grid {
+			Box(
 				title: Text("Daily", comment: "Missions Widget"),
-				expectedCount: 2,
-				missions: contracts.dailies,
 				countdownTarget: contracts.dailyRefresh
-			)
+			) {
+				DailyTicketView(milestones: contracts.daily.milestones)
+					.padding()
+					.background(Color.secondaryGroupedBackground)
+					.cornerRadius(8)
+			}
 			
 			Spacer()
 			
-			if widgetFamily != .systemSmall {
-				CurrentMissionsList(
-					title: Text("Weekly", comment: "Missions Widget"),
-					expectedCount: 3,
-					missions: contracts.weeklies,
-					countdownTarget: contracts.weeklyRefresh,
-					supplement: contracts.queuedUpWeeklies.map {
-						Text("+\($0.count) queued", comment: "Missions Widget: how many more weeklies are queued up after the current set")
-					}
-				)
-				
-				Spacer()
+			Box(
+				title: Text("Weekly", comment: "Missions Widget"),
+				countdownTarget: contracts.weeklyRefresh
+			) {
+				weeklyContents(contracts: contracts)
 			}
 		}
-		.frame(maxHeight: .infinity)
+		.frame(maxWidth: .infinity, maxHeight: .infinity)
+		.padding()
 		.background(Color.groupedBackground)
+	}
+	
+	@ViewBuilder
+	func weeklyContents(contracts: ResolvedContracts) -> some View {
+		let expectedCount = 3
+		
+		HStack(spacing: 1) {
+			HStack(alignment: .top, spacing: 16) {
+				if !contracts.weeklies.isEmpty {
+					ForEach(contracts.weeklies) { mission in
+						if let info = mission.info {
+							MissionView(missionInfo: info, mission: mission.mission)
+						} else {
+							Image(systemName: "questionmark")
+								.foregroundStyle(.secondary)
+						}
+					}
+				} else {
+					ForEach(0..<expectedCount, id: \.self) { _ in
+						MissionView.ProgressView(isComplete: true)
+					}
+				}
+			}
+			.padding()
+			.background(Color.secondaryGroupedBackground)
+			.cornerRadius(8)
+			
+			if let queued = contracts.queuedUpWeeklies {
+				Text("+\(queued.count) queued", comment: "Missions Widget: how many more weeklies are queued up after the current set")
+					.font(.footnote)
+					.foregroundStyle(.secondary)
+					.padding(8)
+					.background {
+						RoundedRectangle(cornerRadius: 8)
+							.fill(Color.secondaryGroupedBackground)
+							.padding(.leading, -8)
+							.clipped()
+					}
+			}
+		}
+	}
+	
+	private struct Box<Content: View>: View {
+		var title: Text
+		let countdownTarget: Date?
+		@ViewBuilder var content: Content
+		
+		var body: some View {
+			GridRow {
+				VStack(alignment: .trailing) {
+					title
+						.font(.headline)
+					
+					Group {
+						if let countdownTarget {
+							HourlyCountdownText(target: countdownTarget)
+						}
+					}
+					.font(.caption.weight(.medium))
+					.foregroundStyle(.secondary)
+				}
+				.gridColumnAlignment(.trailing)
+				
+				content
+					.gridColumnAlignment(.leading)
+			}
+		}
 	}
 }
 
-struct CurrentMissionsList: View {
-	var title: Text
-	var expectedCount: Int
-	var missions: [MissionWithInfo]
-	var countdownTarget: Date? = nil
-	var supplement: Text? = nil
-	
-	var body: some View {
-		VStack(spacing: 8) {
-			HStack(alignment: .lastTextBaseline) {
-				title
-					.font(.headline)
-					.multilineTextAlignment(.leading)
-				
-				Spacer()
-				
-				Group {
-					if let countdownTarget {
-						HourlyCountdownText(target: countdownTarget)
-					}
-				}
-				.font(.caption.weight(.medium))
-				.foregroundStyle(.secondary)
-			}
-			.padding(.horizontal, 4)
-			
-			VStack(spacing: 1) {
-				HStack(alignment: .top, spacing: 16) {
-					if !missions.isEmpty {
-						ForEach(missions, id: \.mission.id) { mission, missionInfo in
-							if let missionInfo {
-								MissionView(missionInfo: missionInfo, mission: mission)
-							} else {
-								Image(systemName: "questionmark")
-									.foregroundStyle(.secondary)
-							}
-						}
-					} else {
-						ForEach(0..<expectedCount, id: \.self) { _ in
-							MissionView.ProgressView(isComplete: true)
-						}
-					}
-				}
-				.padding()
-				.background(Color.secondaryGroupedBackground)
-				.cornerRadius(8)
-				
-				if let supplement {
-					supplement
-						.font(.footnote)
-						.foregroundStyle(.secondary)
-						.padding(.horizontal, 8)
-						.padding(.vertical, 6)
-						.padding(.top, -2)
-						.background {
-							RoundedRectangle(cornerRadius: 8)
-								.fill(Color.secondaryGroupedBackground)
-								.padding(.top, -8)
-								.clipped()
-						}
-				}
-			}
+/*
+extension View {
+	@ViewBuilder
+	func withWidgetBackground() -> some View {
+		if #available(iOSApplicationExtension 17.0, *) {
+			containerBackground(.background, for: .widget)
+		} else {
+			self
 		}
-		.fixedSize()
 	}
 }
+ */
 
 struct MissionView: View {
 	var missionInfo: MissionInfo
@@ -147,27 +153,30 @@ struct MissionView: View {
 		
 		var body: some View {
 			ZStack {
-				if !isComplete, let (progress, toComplete) = progress {
+				if isComplete {
+					Circle()
+						.fill(.accentColor)
+				} else if let (progress, toComplete) = progress {
 					VStack(spacing: 4) {
 						let fractionComplete = CGFloat(progress) / CGFloat(toComplete)
 						CircularProgressView {
 							CircularProgressLayer(end: fractionComplete, color: .accentColor)
 						} base: {
-							Color.tertiaryGroupedBackground
+							Rectangle()
+								.foregroundStyle(.faded)
 						}
 					}
 				} else {
 					Circle()
-						.stroke(lineWidth: 2)
-						.foregroundColor(isComplete ? .accentColor : .gray.opacity(0.1))
+						.stroke(.accentColor, lineWidth: 2)
 				}
 				
 				if isComplete {
 					Image(systemName: "checkmark")
+						.foregroundColor(.white)
 				}
 			}
 			.frame(width: 32, height: 32)
-			.foregroundColor(.accentColor)
 		}
 	}
 }
@@ -211,7 +220,9 @@ struct ViewMissionsWidget_Previews: PreviewProvider {
 		if AssetManager().assets != nil {
 			MissionListView(entry: .mocked(
 				value: .init(
-					contracts: PreviewData.resolvedContracts
+					contracts: PreviewData.resolvedContracts <- {
+						$0.dailyRefresh = .init(timeIntervalSinceNow: 12345)
+					}
 				),
 				configuration: .init() <- { _ in
 					//$0.accentColor = .unknown

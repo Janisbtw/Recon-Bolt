@@ -65,10 +65,6 @@
 /* Time Formatting: minutes, seconds, & milliseconds (used in round details view) */
 "%lld:%@.%@" = "%lld:%@.%@";
 
-/* Contract Progress Bar
-Missions Box */
-"%lld / %lld XP" = "%lld / %lld EXP";
-
 /* Win Rate Stats by Loadout Delta: focused value (drag on graph) */
 "(%lld – %lld)" = "(%lld – %lld)";
 
@@ -112,15 +108,6 @@ Competitive matches after your placements can be identified without their detail
 /* Settings: section */
 "Accounts" = "Contas";
 
-/* Contract Picker: button */
-"Activate" = "Ativar";
-
-/* Contract Picker */
-"Active" = "Ativo";
-
-/* Missions Box: header */
-"Active Contract" = "Contrato ativo";
-
 /* Match List: accessibility label */
 "Add Bookmark" = "Adicionar aos Favoritos";
 
@@ -138,12 +125,6 @@ Competitive matches after your placements can be identified without their detail
 
 /* No comment provided by engineer. */
 "Agent Select" = "Seleção do Agente";
-
-/* Contract Picker */
-"Agent Unlockable" = "Agente desbloqueável";
-
-/* Contract Picker */
-"Agent Unlocked" = "Agente desbloqueado";
 
 /* Statistics filter: button */
 "Agents" = "Agentes";
@@ -210,9 +191,6 @@ Competitive matches after your placements can be identified without their detail
 
 /* Settings: toggle */
 "Automatically Sign Back In" = "Voltar a iniciar sessão automaticamente";
-
-/* Store: available currency */
-"Available:" = "Disponível:";
 
 /* Hit Distribution Stats: average HS% */
 "Average: %@" = "Média: %@";
@@ -306,9 +284,6 @@ Playtime Stats: section */
 /* No comment provided by engineer. */
 "Choose Title" = "Selecionar o título";
 
-/* Contract Picker: title */
-"Choose a Contract" = "Selecionar um contrato";
-
 /* Buddy Picker: alert shown when both instances of a buddy are in use */
 "Choose a weapon to take %@ from." = "Escolhe uma arma para receber %@ .";
 
@@ -318,14 +293,8 @@ Playtime Stats: section */
 /* Skin Details: section */
 "Color Variants" = "Variantes de cor";
 
-/* Contract Picker */
-"Completed" = "Concluído";
-
 /* Storage Management: title for alert to confirm deleting some matches */
 "Confirm Delete" = "Confirmar Apagar";
-
-/* Missions Box */
-"Contract complete!" = "Contrato concluído!";
 
 /* Request Log: button to copy the request's body/contents (accessibility label) */
 "Copy Body" = "Copiar Corpo";
@@ -386,9 +355,6 @@ Playtime Stats: section */
 
 /* Missions Widget */
 "Daily" = "Diário";
-
-/* Missions Box: header */
-"Daily Missions" = "Missões diárias";
 
 /* Store */
 "Daily Offers" = "Ofertas diárias";
@@ -518,9 +484,6 @@ O SEU RELATÓRIO DE BUG AQUI
 /* No comment provided by engineer. */
 "Force Refresh Widgets" = "Forçar Atualização dos Widgets";
 
-/* Contract Picker */
-"Free Agent" = "Agente livre";
-
 /* Storage Management: button to free up a certain amount of space */
 "Free up these %@" = "Liberte estes %@";
 
@@ -618,9 +581,6 @@ Weapon Reference: stats */
 
 /* Bookmark/Player List: player level */
 "Level %lld" = "Nível %lld";
-
-/* Contract Progress Bar */
-"Level %lld / %lld" = "Nível %lld/%lld";
 
 /* No comment provided by engineer. */
 "Lifetime Peak" = "Rank mais alto";
@@ -737,9 +697,6 @@ Se não souberes o teu nome de utilizador ou não tiveres um, podes corrigi-lo e
 /* Asset Management */
 "Missing assets!" = "Ficheiros em falta!";
 
-/* Missions Box */
-"Missing progress for contract!" = "Progresso em falta para o contrato!";
-
 /* No comment provided by engineer. */
 "Missing season data!" = "Dados da época em falta!";
 
@@ -778,9 +735,6 @@ Se não souberes o teu nome de utilizador ou não tiveres um, podes corrigi-lo e
 
 /* Gun Customizer: shown when a weapon has no buddy active */
 "No buddy selected!" = "Nenhum chaveiro selecionado!";
-
-/* Missions Box */
-"No contract active!" = "Sem contrato ativo!";
 
 /* Win Rate Stats: by map */
 "No data" = "Sem dados";
@@ -891,6 +845,9 @@ Playtime Stats: section */
 
 /* Statistics filter: button */
 "Queues" = "Filas de espera";
+
+/* App Icon Name */
+"Rainbow" = "Arco-íris";
 
 /* Weapon Reference: stats */
 "Range" = "Gama";
@@ -1050,6 +1007,12 @@ Login Form: button */
 /* Hit Distribution Stats: smoothing slider */
 "Smoothing" = "Suavizar";
 
+/* App Icon Picker: section */
+"Special Icons" = "Ícones especiais";
+
+/* App Icon Picker: section footer */
+"Special Icons are available year-round for Pro users, while free users can only select them during a certain time window." = "Os ícones especiais estão disponíveis durante todo o ano para os utilizadores Pro, enquanto os utilizadores gratuitos só podem seleccioná-los durante um determinado período.";
+
 /* No comment provided by engineer. */
 "Spectator" = "Espetador";
 
@@ -1092,9 +1055,6 @@ Login Form: button */
 /* Pro Store */
 "Support Further Development!" = "Apoiar o desenvolvimento futuro!";
 
-/* Missions Box: button */
-"Switch Contract" = "Trocar o contrato";
-
 /* Login Form: is this safe? */
 "TL;DR: you'll have to take my word for it, but Riot doesn't seem to mind." = "TL;DR: você vai precisar confiar na minha palavra para isso, mas a Riot parece que não se importa.";
 
@@ -1110,7 +1070,7 @@ Login Form: button */
 /* App Icon Description: default */
 "The default look of Recon Bolt." = "O aspeto predefinido do Recon Bolt.";
 
-/* No comment provided by engineer. */
+/* App Icon Picker: section footer */
 "The pro version lets you change the app icon! More icons might be coming in future updates." = "A versão profissional permite-lhe alterar o ícone da aplicação! Poderão surgir mais ícones em futuras atualizações.";
 
 /* Settings: picker */
@@ -1146,9 +1106,6 @@ Hit Distribution Stats: region */
 
 /* Request Log */
 "URL" = "URL";
-
-/* Missions Box: header, shown when a mission is not daily or weekly (should not happen unless Riot changes something) */
-"Uncategorized Missions" = "Missões sem categorias";
 
 /* Shown when a match does not match the filter and its details have not been fetched. */
 "Unfetched" = "Não encontrado";
@@ -1193,9 +1150,6 @@ Nesse site, navegue até **Riot Account Sign-in** e defina um nome de usuário e
 /* placeholder */
 "Unknown Card" = "Cartão desconhecido";
 
-/* Store */
-"Unknown Offer" = "Oferta desconhecida";
-
 /* No comment provided by engineer. */
 "Unknown Player" = "Jogador Desconhecido";
 
@@ -1223,9 +1177,6 @@ Round Details: killed by unknown/unspecified weapon */
 
 /* No comment provided by engineer. */
 "Unknown bundle!" = "Pacote Desconhecido!";
-
-/* Missions Box */
-"Unknown contract!" = "Contrato desconhecido!";
 
 /* Store Bundle Details: should never show, but if Riot adds a new kind of item to a bundle, this would show */
 "Unknown item of type %@" = "Item desconhecido do tipo %@";

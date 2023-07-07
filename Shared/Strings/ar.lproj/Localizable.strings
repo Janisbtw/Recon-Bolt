@@ -74,10 +74,6 @@
 /* Time Formatting: minutes, seconds, & milliseconds (used in round details view) */
 "%lld:%@.%@" = "%lld:%@.%@";
 
-/* Contract Progress Bar
-Missions Box */
-"%lld / %lld XP" = "%lld/%lldXP";
-
 /* Win Rate Stats by Loadout Delta: focused value (drag on graph) */
 "(%lld – %lld)" = "(%lld – %lld)";
 
@@ -119,17 +115,14 @@ Competitive matches after your placements can be identified without their detail
 /* No comment provided by engineer. */
 "About Recon Bolt" = "بشأن Recon Bolt";
 
+/* Store: accessory section */
+"Accessories" = "ملحقات";
+
+/* Store: Accessory List: title */
+"Accessory Store" = "متجر الملحقات";
+
 /* Settings: section */
 "Accounts" = "الحسابات";
-
-/* Contract Picker: button */
-"Activate" = "فعّل";
-
-/* Contract Picker */
-"Active" = "مفُعّل";
-
-/* Missions Box: header */
-"Active Contract" = "عقد مفُعّل";
 
 /* Match List: accessibility label */
 "Add Bookmark" = "أضف إشارة مرجعية";
@@ -148,12 +141,6 @@ Competitive matches after your placements can be identified without their detail
 
 /* No comment provided by engineer. */
 "Agent Select" = "اختيار العميل";
-
-/* Contract Picker */
-"Agent Unlockable" = "عميل يمكن تفعيله";
-
-/* Contract Picker */
-"Agent Unlocked" = "عميل مفعّل";
 
 /* Statistics filter: button */
 "Agents" = "العملاء";
@@ -188,6 +175,9 @@ Competitive matches after your placements can be identified without their detail
 /* Settings: button */
 "App Icon" = "ايقونة التطبيق";
 
+/* Account Settings: title for alert to confirm signing out of all accounts—not always visible; iOS decides when to show this */
+"Are You Sure?" = "هل أنت متأكد؟";
+
 /* No comment provided by engineer. */
 "Are your assets outdated?" = "هل مواردك قديمة؟";
 
@@ -218,11 +208,14 @@ Competitive matches after your placements can be identified without their detail
 /* Settings: toggle */
 "Automatically Sign Back In" = "سجّل دخولي تلقائياً";
 
-/* Store: available currency */
-"Available:" = "في حسابك:";
+/* Bookmark/Player List: toggle */
+"Automatically Update Ranks" = "حدّث المراتب تلقائيا";
 
 /* Hit Distribution Stats: average HS% */
 "Average: %@" = "على المعدل: %@";
+
+/* Pro Store: warning title */
+"Before you Buy" = "قبل ان تشتري";
 
 /* Request Log: shown for bodies that are not decodable to text */
 "Binary Data" = "البيانات الثنائية";
@@ -274,6 +267,12 @@ Playtime Stats: section */
 /* Weapon Reference */
 "Category" = "الصنف";
 
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month with a colorful look! (Free during June)" = "احتفل شهر الفخر مع مظهر جديد ملون! (مجاني في شهر حزيران)";
+
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month, but in dark!" = "احتفل شهر الفخر مع مظهر جديد لكن في الظلام!";
+
 /* No comment provided by engineer. */
 "Change Buddy" = "غيّر ملحق السلاح";
 
@@ -310,9 +309,6 @@ Playtime Stats: section */
 /* No comment provided by engineer. */
 "Choose Title" = "اختر لقب";
 
-/* Contract Picker: title */
-"Choose a Contract" = "اختر عقد";
-
 /* Buddy Picker: alert shown when both instances of a buddy are in use */
 "Choose a weapon to take %@ from." = "اختر سلاح لتأخذ %@ منه";
 
@@ -322,14 +318,8 @@ Playtime Stats: section */
 /* Skin Details: section */
 "Color Variants" = "متغيرات الألوان";
 
-/* Contract Picker */
-"Completed" = "اكتمل";
-
 /* Storage Management: title for alert to confirm deleting some matches */
 "Confirm Delete" = "تأكيد الحذف";
-
-/* Missions Box */
-"Contract complete!" = "اكتمل العقد!";
 
 /* Request Log: button to copy the request's body/contents (accessibility label) */
 "Copy Body" = "نسخ المحتوى";
@@ -392,7 +382,7 @@ Playtime Stats: section */
 "Daily" = "يومي";
 
 /* Missions Box: header */
-"Daily Missions" = "المهام اليومية";
+"Daily Checkpoints" = "نقاط التقدم اليومية";
 
 /* Store */
 "Daily Offers" = "عروض يومية";
@@ -402,6 +392,9 @@ Playtime Stats: section */
 
 /* App Theme */
 "Dark Mode" = "الوضع الداكن";
+
+/* App Icon Name */
+"Dark Rainbow" = "قوس قزح داكن";
 
 /* Stats: match loading */
 "Data going back to %@" = "المعلومات تعود الى %@";
@@ -522,9 +515,6 @@ Stats: error details */
 /* No comment provided by engineer. */
 "Force Refresh Widgets" = "إعادة تحميل الودجات بالقوة";
 
-/* Contract Picker */
-"Free Agent" = "عميل مجاني";
-
 /* Storage Management: button to free up a certain amount of space */
 "Free up these %@" = "قم بتفضية هذه %@";
 
@@ -622,9 +612,6 @@ Weapon Reference: stats */
 
 /* Bookmark/Player List: player level */
 "Level %lld" = "مستوى الحساب %lld";
-
-/* Contract Progress Bar */
-"Level %lld / %lld" = "مستوى %lld / %lld";
 
 /* No comment provided by engineer. */
 "Lifetime Peak" = "أعلى مرتبة على الإطلاق";
@@ -741,9 +728,6 @@ If you don't know your username or don't have one, you can fix that at [account.
 /* Asset Management */
 "Missing assets!" = "موارد مفقودة!";
 
-/* Missions Box */
-"Missing progress for contract!" = "تقدم العقد مفقود!";
-
 /* No comment provided by engineer. */
 "Missing season data!" = "معلومات الموسم مفقودة!";
 
@@ -782,9 +766,6 @@ If you don't know your username or don't have one, you can fix that at [account.
 
 /* Gun Customizer: shown when a weapon has no buddy active */
 "No buddy selected!" = "لم يتم اختيار ملحق!";
-
-/* Missions Box */
-"No contract active!" = "لم يتم تفعيل عقد!";
 
 /* Win Rate Stats: by map */
 "No data" = "لا توجد معلومات";
@@ -895,6 +876,9 @@ Playtime Stats: section */
 
 /* Statistics filter: button */
 "Queues" = "الطوابير";
+
+/* App Icon Name */
+"Rainbow" = "قوس قزح";
 
 /* Weapon Reference: stats */
 "Range" = "النطاق";
@@ -1033,6 +1017,9 @@ Login Form: button */
 /* Login Form */
 "Sign In with your Riot account" = "سجّل الدخول بحساب Riot";
 
+/* Account Settings: button in alert to confirm signing out of all accounts */
+"Sign Out" = "تسجيل الخروج";
+
 /* Account Settings: button */
 "Sign Out of All Accounts" = "سجل الخروج من جميع الحسابات";
 
@@ -1050,6 +1037,12 @@ Login Form: button */
 
 /* Hit Distribution Stats: smoothing slider */
 "Smoothing" = "تنعيم";
+
+/* App Icon Picker: section */
+"Special Icons" = "ايقونات مميزة";
+
+/* App Icon Picker: section footer */
+"Special Icons are available year-round for Pro users, while free users can only select them during a certain time window." = "تتوفر الايقونات المميزة على مدار العام لمستخدمي Pro ، بينما يمكن للمستخدمين المجانيين استعمالها فقط خلال فترة زمنية معينة.";
 
 /* No comment provided by engineer. */
 "Spectator" = "مُشاهد";
@@ -1093,9 +1086,6 @@ Login Form: button */
 /* Pro Store */
 "Support Further Development!" = "ادعم التطوير على المدى الطويل!";
 
-/* Missions Box: button */
-"Switch Contract" = "بدّل العقد";
-
 /* Login Form: is this safe? */
 "TL;DR: you'll have to take my word for it, but Riot doesn't seem to mind." = "عليك أن تأخذ كلامي من أجل ذلك ، لكن يبدو أن شركة Riot لا تمانع.";
 
@@ -1111,7 +1101,7 @@ Login Form: button */
 /* App Icon Description: default */
 "The default look of Recon Bolt." = "المظهر الافتراضي لـ Recon Bolt.";
 
-/* No comment provided by engineer. */
+/* App Icon Picker: section footer */
 "The pro version lets you change the app icon! More icons might be coming in future updates." = "يتيح لك الإصدار Pro تغيير رمز التطبيق! قد يأتي المزيد من الرموز في التحديثات المستقبلية.";
 
 /* Settings: picker */
@@ -1119,6 +1109,9 @@ Login Form: button */
 
 /* No comment provided by engineer. */
 "These are the last %lld requests sent by the app, along with their responses." = "هذه هي آخر %lld من الطلبات التي أرسلها التطبيق ، بالإضافة إلى استجاباتهم.";
+
+/* Bookmark/Player List: toggle description */
+"This can cause a lot of requests. If you have many bookmarks or are often hitting the rate limit, you might prefer to turn this off." = "هذا يمكن أن يسبب الكثير من الطلبات. إذا كان لديك العديد من الإشارات المرجعية أو غالبًا ما تصل إلى حد السعر ، فقد تفضل إيقاف تشغيل هذا.";
 
 /* Statistics error for iOS <16 */
 "This feature requires iOS 16 or newer." = "تتطلب هذه الميزة iOS 16 أو أحدث.";
@@ -1148,11 +1141,19 @@ Hit Distribution Stats: region */
 /* Request Log */
 "URL" = "الموقع";
 
-/* Missions Box: header, shown when a mission is not daily or weekly (should not happen unless Riot changes something) */
-"Uncategorized Missions" = "مهام غير مصنّفة";
-
 /* Shown when a match does not match the filter and its details have not been fetched. */
 "Unfetched" = "لم يتم تحضيره";
+
+/* Pro Store: warning text */
+"Unfortunately, Riot is now using their intellectual property rights to take down this app. I'm trying to discuss with them to find a way forward, but I currently cannot guarantee that the app will stay available. I believe it will remain installed if you currently have it, but I'm not sure if I'll still be able to verify Pro purchases.
+
+If you or someone you know works at Riot, get in touch with me—there's a few ways linked in the About Recon Bolt section below.
+
+I would still be grateful for your support if you do purchase it! But it's at your own risk because I cannot guarantee that you'll enjoy the promised features going forward :(" = "للأسف ، تستخدم شركة Riot الآن حقوق الملكية الفكرية الخاصة بها لإزالة هذا التطبيق. أحاول مناقشته معهم لإيجاد طريقة للمضي قدمًا ، لكن لا يمكنني حاليًا ضمان بقاء التطبيق متاحًا. أعتقد أنه سيظل مثبتًا إذا كان لديك حاليًا ، لكنني لست متأكدًا مما إذا كنت سأظل قادرًا على التحقق من مشتريات Pro.
+
+إذا كنت تعمل أنت أو أي شخص تعرفه في Riot ، فتواصل معي - هناك عدة طرق مرتبطة في قسم حول Recon Bolt أدناه.
+
+سأظل ممتنًا لدعمك إذا قمت بشرائه! لكن هذا على مسؤوليتك الخاصة لأنني لا أستطيع أن أضمن أنك ستستمتع بالميزات الموعودة في المستقبل :(";
 
 /* Hit Distribution Stats: footnote */
 "Unfortunately, Valorant doesn't store information about which weapon was used for each hit. All we get is the weapon you started the round with and what weapon you used for each kill. Recon Bolt guesses the weapon involved in each damage based on this information, but it cannot be perfect (and neither can any other tracker)." = "لسوء الحظ ، لا يقوم Valorant بتخزين المعلومات حول السلاح الذي تم استخدامه لكل ضربة. كل ما نحصل عليه هو السلاح الذي بدأت به الجولة والسلاح الذي استخدمته في كل عملية قتل. يخمن Recon Bolt السلاح المتضمن في كل ضرر بناءً على هذه المعلومات ، لكنه لا يمكن أن يكون مثاليًا (ولا يمكن لأي tracker آخر).";
@@ -1183,9 +1184,6 @@ On that site, navigate to **Riot Account Sign-in** and set yourself a username a
 /* placeholder */
 "Unknown Card" = "بطاقة غير معروفة";
 
-/* Store */
-"Unknown Offer" = "طلب غير معروف";
-
 /* No comment provided by engineer. */
 "Unknown Player" = "لاعب غير معروف";
 
@@ -1213,9 +1211,6 @@ Round Details: killed by unknown/unspecified weapon */
 
 /* No comment provided by engineer. */
 "Unknown bundle!" = "حزمة غير معروفة!";
-
-/* Missions Box */
-"Unknown contract!" = "عقد غير معروف!";
 
 /* Store Bundle Details: should never show, but if Riot adds a new kind of item to a bundle, this would show */
 "Unknown item of type %@" = "عنصر غير معروف من النوع %@";

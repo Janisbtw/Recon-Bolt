@@ -65,10 +65,6 @@
 /* Time Formatting: minutes, seconds, & milliseconds (used in round details view) */
 "%lld:%@.%@" = "%lld:%@.%@";
 
-/* Contract Progress Bar
-Missions Box */
-"%lld / %lld XP" = "%lld / %lld XP";
-
 /* Win Rate Stats by Loadout Delta: focused value (drag on graph) */
 "(%lld – %lld)" = "(%lld - %lld)";
 
@@ -109,17 +105,14 @@ Competitive matches after your placements can be identified without their detail
 /* No comment provided by engineer. */
 "About Recon Bolt" = "O Recon Boltu";
 
+/* Store: accessory section */
+"Accessories" = "Příslušenství";
+
+/* Store: Accessory List: title */
+"Accessory Store" = "Obchod s příslušenstvím";
+
 /* Settings: section */
 "Accounts" = "Účty";
-
-/* Contract Picker: button */
-"Activate" = "Aktivovat";
-
-/* Contract Picker */
-"Active" = "Aktivní";
-
-/* Missions Box: header */
-"Active Contract" = "Aktivní Kontrakt";
 
 /* Match List: accessibility label */
 "Add Bookmark" = "Přidat do oblíbených";
@@ -138,12 +131,6 @@ Competitive matches after your placements can be identified without their detail
 
 /* No comment provided by engineer. */
 "Agent Select" = "Výběr Agenta";
-
-/* Contract Picker */
-"Agent Unlockable" = "Odemykatelný Agent";
-
-/* Contract Picker */
-"Agent Unlocked" = "Agent Odemčen";
 
 /* Statistics filter: button */
 "Agents" = "Agenti";
@@ -211,8 +198,8 @@ Competitive matches after your placements can be identified without their detail
 /* Settings: toggle */
 "Automatically Sign Back In" = "Automatické znovupřihlášení";
 
-/* Store: available currency */
-"Available:" = "K dispozici:";
+/* Bookmark/Player List: toggle */
+"Automatically Update Ranks" = "Automaticky aktualizovat ranky";
 
 /* Hit Distribution Stats: average HS% */
 "Average: %@" = "Průměr: %@";
@@ -270,6 +257,12 @@ Playtime Stats: section */
 /* Weapon Reference */
 "Category" = "Kategorie";
 
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month with a colorful look! (Free during June)" = "Oslavte měsíc LGBTQ s barevným vzhledem! (během června zdarma)";
+
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month, but in dark!" = "Oslavte měsíc LGBTQ, ale potmě!";
+
 /* No comment provided by engineer. */
 "Change Buddy" = "Změnit Přívěšek";
 
@@ -306,9 +299,6 @@ Playtime Stats: section */
 /* No comment provided by engineer. */
 "Choose Title" = "Vybrat Titul";
 
-/* Contract Picker: title */
-"Choose a Contract" = "Vybrat kontrakt";
-
 /* Buddy Picker: alert shown when both instances of a buddy are in use */
 "Choose a weapon to take %@ from." = "Vyberte zbraň, ze které chcete vzít %@.";
 
@@ -318,14 +308,8 @@ Playtime Stats: section */
 /* Skin Details: section */
 "Color Variants" = "Barevné Varianty";
 
-/* Contract Picker */
-"Completed" = "Dokončen";
-
 /* Storage Management: title for alert to confirm deleting some matches */
 "Confirm Delete" = "Potvrdit Smazání";
-
-/* Missions Box */
-"Contract complete!" = "Kontrakt dokončen!";
 
 /* Request Log: button to copy the request's body/contents (accessibility label) */
 "Copy Body" = "Kopírovat Tělo";
@@ -388,7 +372,7 @@ Playtime Stats: section */
 "Daily" = "Denní";
 
 /* Missions Box: header */
-"Daily Missions" = "Denní Úkoly";
+"Daily Checkpoints" = "Denní kontrolní body";
 
 /* Store */
 "Daily Offers" = "Denní Nabídky";
@@ -398,6 +382,9 @@ Playtime Stats: section */
 
 /* App Theme */
 "Dark Mode" = "Tmavý Režim";
+
+/* App Icon Name */
+"Dark Rainbow" = "Tmavá duha";
 
 /* Stats: match loading */
 "Data going back to %@" = "Data do %@";
@@ -518,9 +505,6 @@ VAŠE HLÁŠENÍ CHYBY ZDE
 /* No comment provided by engineer. */
 "Force Refresh Widgets" = "Vynutit obnovení widgetů";
 
-/* Contract Picker */
-"Free Agent" = "Agent Zdarma";
-
 /* Storage Management: button to free up a certain amount of space */
 "Free up these %@" = "Uvolnit tyto %@";
 
@@ -618,9 +602,6 @@ Weapon Reference: stats */
 
 /* Bookmark/Player List: player level */
 "Level %lld" = "Úroveň %lld";
-
-/* Contract Progress Bar */
-"Level %lld / %lld" = "Úroveň %lld/%lld";
 
 /* No comment provided by engineer. */
 "Lifetime Peak" = "Nejvyšší Dosažený Rank";
@@ -737,9 +718,6 @@ Pokud své uživatelské jméno neznáte nebo ho nemáte, můžete jej zjistit n
 /* Asset Management */
 "Missing assets!" = "Chybí assety!";
 
-/* Missions Box */
-"Missing progress for contract!" = "Žádné data pro tento kontrakt!";
-
 /* No comment provided by engineer. */
 "Missing season data!" = "Chybějící data o actu!";
 
@@ -778,9 +756,6 @@ Pokud své uživatelské jméno neznáte nebo ho nemáte, můžete jej zjistit n
 
 /* Gun Customizer: shown when a weapon has no buddy active */
 "No buddy selected!" = "Žádný vybraný přívěšek!";
-
-/* Missions Box */
-"No contract active!" = "Žádný aktivní kontrakt!";
 
 /* Win Rate Stats: by map */
 "No data" = "Žádné data";
@@ -891,6 +866,9 @@ Playtime Stats: section */
 
 /* Statistics filter: button */
 "Queues" = "Herní módy";
+
+/* App Icon Name */
+"Rainbow" = "Duha";
 
 /* Weapon Reference: stats */
 "Range" = "Vzdálenost";
@@ -1050,6 +1028,12 @@ Login Form: button */
 /* Hit Distribution Stats: smoothing slider */
 "Smoothing" = "Vyhlazování";
 
+/* App Icon Picker: section */
+"Special Icons" = "Speciální Ikony";
+
+/* App Icon Picker: section footer */
+"Special Icons are available year-round for Pro users, while free users can only select them during a certain time window." = "Speciální ikony jsou pro uživatele Pro dostupné celoročně, zatímco uživatelé zdarma si je mohou vybrat pouze v určitém časovém okně.";
+
 /* No comment provided by engineer. */
 "Spectator" = "Divák";
 
@@ -1092,9 +1076,6 @@ Login Form: button */
 /* Pro Store */
 "Support Further Development!" = "Podpořte Budoucí Vývoj!";
 
-/* Missions Box: button */
-"Switch Contract" = "Změnit Kontrakt";
-
 /* Login Form: is this safe? */
 "TL;DR: you'll have to take my word for it, but Riot doesn't seem to mind." = "Budete mě muset vzít za slovo, ale Riotu to zřejmě nevadí.";
 
@@ -1110,7 +1091,7 @@ Login Form: button */
 /* App Icon Description: default */
 "The default look of Recon Bolt." = "Výchozí vzhled Recon Boltu.";
 
-/* No comment provided by engineer. */
+/* App Icon Picker: section footer */
 "The pro version lets you change the app icon! More icons might be coming in future updates." = "Verze pro umožňuje změnit ikonu aplikace! Další ikony se mohou objevit v budoucích aktualizacích.";
 
 /* Settings: picker */
@@ -1118,6 +1099,9 @@ Login Form: button */
 
 /* No comment provided by engineer. */
 "These are the last %lld requests sent by the app, along with their responses." = "%lld posledních požadavků odeslané aplikací a odpovědi na ně.";
+
+/* Bookmark/Player List: toggle description */
+"This can cause a lot of requests. If you have many bookmarks or are often hitting the rate limit, you might prefer to turn this off." = "To může způsobit spoustu požadavků. Pokud máte hodně záložek nebo často překračujete limit, můžete tuto funkci raději vypnout.";
 
 /* Statistics error for iOS <16 */
 "This feature requires iOS 16 or newer." = "Tato funkce vyžaduje iOS 16 nebo novější.";
@@ -1146,9 +1130,6 @@ Hit Distribution Stats: region */
 
 /* Request Log */
 "URL" = "URL";
-
-/* Missions Box: header, shown when a mission is not daily or weekly (should not happen unless Riot changes something) */
-"Uncategorized Missions" = "Nezařazené úkoly";
 
 /* Shown when a match does not match the filter and its details have not been fetched. */
 "Unfetched" = "Není načten";
@@ -1193,9 +1174,6 @@ Na této stránce přejděte na **Přihlášení k účtu Riot** a nastavte si u
 /* placeholder */
 "Unknown Card" = "Neznámá Karta";
 
-/* Store */
-"Unknown Offer" = "Neznámá Nabídka";
-
 /* No comment provided by engineer. */
 "Unknown Player" = "Neznámý Hráč";
 
@@ -1223,9 +1201,6 @@ Round Details: killed by unknown/unspecified weapon */
 
 /* No comment provided by engineer. */
 "Unknown bundle!" = "Neznámá kolekce!";
-
-/* Missions Box */
-"Unknown contract!" = "Neznámý kontrakt!";
 
 /* Store Bundle Details: should never show, but if Riot adds a new kind of item to a bundle, this would show */
 "Unknown item of type %@" = "Neznámá položka typu %@";

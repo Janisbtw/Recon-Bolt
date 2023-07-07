@@ -1,8 +1,15 @@
 /* Pro Store: error restoring purchase */
-"A previous transaction was found, but it could not be verified! %@" = "이전 거래가 발견되었지만, 확인할 수 없습니다! %@";
+"A previous transaction was found, but it could not be verified! %@" = "이전 거래가 발견되었으나, 불러올 수 없습니다 %@";
 
 /* error loading the account for a widget */
-"Could not load active account!" = "활성 계정을 로드할 수 없습니다!";
+"Could not load active account!" = "현재 로그인된 계정을 불러올 수 없습니다!";
 
 /* Riot API Error */
 "Invalid Headers: %@" = "잘못된 헤더: %@";
+
+/* wrong account error */
+"It looks like this account has never played Valorant!
+
+You've probably signed into the wrong account; %@" = "이 계정은 발로란트를 플레이한 적이 없는 것 같습니다!
+
+잘못된 계정으로 로그인한 것 같습니다.; %@";

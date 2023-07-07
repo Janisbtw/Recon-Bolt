@@ -74,10 +74,6 @@
 /* Time Formatting: minutes, seconds, & milliseconds (used in round details view) */
 "%lld:%@.%@" = "%lld:%@.%@";
 
-/* Contract Progress Bar
-Missions Box */
-"%lld / %lld XP" = "%lld / %lld XP";
-
 /* Win Rate Stats by Loadout Delta: focused value (drag on graph) */
 "(%lld – %lld)" = "(%lld – %lld)";
 
@@ -118,17 +114,14 @@ Competitive matches after your placements can be identified without their detail
 /* No comment provided by engineer. */
 "About Recon Bolt" = "Về Recon Bolt";
 
+/* Store: accessory section */
+"Accessories" = "Phụ kiện";
+
+/* Store: Accessory List: title */
+"Accessory Store" = "Cửa hàng phụ kiện";
+
 /* Settings: section */
 "Accounts" = "Tài khoản";
-
-/* Contract Picker: button */
-"Activate" = "Kích hoạt";
-
-/* Contract Picker */
-"Active" = "Đang giao kèo";
-
-/* Missions Box: header */
-"Active Contract" = "Giao kèo đang được kích hoạt";
 
 /* Match List: accessibility label */
 "Add Bookmark" = "Thêm dấu trang";
@@ -147,12 +140,6 @@ Competitive matches after your placements can be identified without their detail
 
 /* No comment provided by engineer. */
 "Agent Select" = "Chọn đặc vụ";
-
-/* Contract Picker */
-"Agent Unlockable" = "Đặc vụ có thể mở khoá";
-
-/* Contract Picker */
-"Agent Unlocked" = "Đặc vụ đã mở khoá";
 
 /* Statistics filter: button */
 "Agents" = "Đặc vụ";
@@ -220,8 +207,8 @@ Competitive matches after your placements can be identified without their detail
 /* Settings: toggle */
 "Automatically Sign Back In" = "Tự động đăng nhập lại";
 
-/* Store: available currency */
-"Available:" = "Khả dụng:";
+/* Bookmark/Player List: toggle */
+"Automatically Update Ranks" = "Tự động cập nhật thứ hạng";
 
 /* Hit Distribution Stats: average HS% */
 "Average: %@" = "Trung bình: %@";
@@ -279,6 +266,12 @@ Playtime Stats: section */
 /* Weapon Reference */
 "Category" = "Loại";
 
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month with a colorful look! (Free during June)" = "Chào mừng tháng Tự hào LGBTQ với diện mạo đầy màu sắc! (Miễn phí trong tháng 6)";
+
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month, but in dark!" = "Kỷ niệm tháng Tự hào LGBTQ, nhưng trong bóng tối!";
+
 /* No comment provided by engineer. */
 "Change Buddy" = "Đổi phụ kiện";
 
@@ -315,9 +308,6 @@ Playtime Stats: section */
 /* No comment provided by engineer. */
 "Choose Title" = "Chọn danh hiệu";
 
-/* Contract Picker: title */
-"Choose a Contract" = "Chọn một giao kèo";
-
 /* Buddy Picker: alert shown when both instances of a buddy are in use */
 "Choose a weapon to take %@ from." = "Chọn một vũ khí để lấy %@ từ.";
 
@@ -327,14 +317,8 @@ Playtime Stats: section */
 /* Skin Details: section */
 "Color Variants" = "Mầu của skin";
 
-/* Contract Picker */
-"Completed" = "Hoàn thành";
-
 /* Storage Management: title for alert to confirm deleting some matches */
 "Confirm Delete" = "Xác nhận xóa";
-
-/* Missions Box */
-"Contract complete!" = "Giao kèo hoàn tất!";
 
 /* Request Log: button to copy the request's body/contents (accessibility label) */
 "Copy Body" = "Sao chép nội dung";
@@ -397,7 +381,7 @@ Playtime Stats: section */
 "Daily" = "Hàng ngày";
 
 /* Missions Box: header */
-"Daily Missions" = "Nhiệm vụ hàng ngày";
+"Daily Checkpoints" = "Điểm kiểm tra hàng ngày";
 
 /* Store */
 "Daily Offers" = "Ưu đãi hàng ngày";
@@ -407,6 +391,9 @@ Playtime Stats: section */
 
 /* App Theme */
 "Dark Mode" = "Chế độ tối";
+
+/* App Icon Name */
+"Dark Rainbow" = "Cầu vồng tối";
 
 /* Stats: match loading */
 "Data going back to %@" = "Dữ liệu trở lại đến %@";
@@ -527,9 +514,6 @@ BÁO CÁO LỖI CỦA BẠN TẠI ĐÂY
 /* No comment provided by engineer. */
 "Force Refresh Widgets" = "Buộc làm mới tiện ích";
 
-/* Contract Picker */
-"Free Agent" = "Đặc vụ miễn phí";
-
 /* Storage Management: button to free up a certain amount of space */
 "Free up these %@" = "Giài phóng %@";
 
@@ -627,9 +611,6 @@ Weapon Reference: stats */
 
 /* Bookmark/Player List: player level */
 "Level %lld" = "Cấp %lld";
-
-/* Contract Progress Bar */
-"Level %lld / %lld" = "Cấp %lld / %lld";
 
 /* No comment provided by engineer. */
 "Lifetime Peak" = "Xếp hạng cao nhất";
@@ -746,9 +727,6 @@ Nếu không biết tên người dùng của mình hoặc không có, bạn có
 /* Asset Management */
 "Missing assets!" = "Không tìm thấy tài nguyên!";
 
-/* Missions Box */
-"Missing progress for contract!" = "Thiếu tiến độ cho giao kèo!";
-
 /* No comment provided by engineer. */
 "Missing season data!" = "Thiếu dữ liệu mùa!";
 
@@ -787,9 +765,6 @@ Nếu không biết tên người dùng của mình hoặc không có, bạn có
 
 /* Gun Customizer: shown when a weapon has no buddy active */
 "No buddy selected!" = "Không có phụ kiện nào được chọn!";
-
-/* Missions Box */
-"No contract active!" = "Không có giao kèo hoạt dộng!";
 
 /* Win Rate Stats: by map */
 "No data" = "Không có dữ liệu";
@@ -900,6 +875,9 @@ Playtime Stats: section */
 
 /* Statistics filter: button */
 "Queues" = "Hàng chờ";
+
+/* App Icon Name */
+"Rainbow" = "Cầu Vồng";
 
 /* Weapon Reference: stats */
 "Range" = "Phạm vi";
@@ -1059,6 +1037,12 @@ Login Form: button */
 /* Hit Distribution Stats: smoothing slider */
 "Smoothing" = "Làm mịn";
 
+/* App Icon Picker: section */
+"Special Icons" = "Icon đặc biệt";
+
+/* App Icon Picker: section footer */
+"Special Icons are available year-round for Pro users, while free users can only select them during a certain time window." = "Biểu tượng Đặc biệt có sẵn quanh năm cho người dùng Pro, trong khi người dùng miễn phí chỉ có thể chọn chúng trong một khoảng thời gian nhất định.";
+
 /* No comment provided by engineer. */
 "Spectator" = "Người xem";
 
@@ -1101,9 +1085,6 @@ Login Form: button */
 /* Pro Store */
 "Support Further Development!" = "Hãy ủng hộ để ứng dụng ngày càng phát triển!";
 
-/* Missions Box: button */
-"Switch Contract" = "Đổi giao kèo";
-
 /* Login Form: is this safe? */
 "TL;DR: you'll have to take my word for it, but Riot doesn't seem to mind." = "TL;DR: bạn sẽ phải tin lời tôi, nhưng Riot dường như không bận tâm.";
 
@@ -1119,7 +1100,7 @@ Login Form: button */
 /* App Icon Description: default */
 "The default look of Recon Bolt." = "Giao diện mặc định của Recon Bolt.";
 
-/* No comment provided by engineer. */
+/* App Icon Picker: section footer */
 "The pro version lets you change the app icon! More icons might be coming in future updates." = "Phiên bản pro cho phép bạn thay đổi biểu tượng ứng dụng! Nhiều biểu tượng hơn có thể sẽ xuất hiện trong các bản cập nhật trong tương lai.";
 
 /* Settings: picker */
@@ -1127,6 +1108,9 @@ Login Form: button */
 
 /* No comment provided by engineer. */
 "These are the last %lld requests sent by the app, along with their responses." = "Đây là %lld yêu cầu cuối cùng được gửi bởi ứng dụng, cùng với phản hồi của chúng.";
+
+/* Bookmark/Player List: toggle description */
+"This can cause a lot of requests. If you have many bookmarks or are often hitting the rate limit, you might prefer to turn this off." = "Điều này có thể gây ra rất nhiều yêu cầu. Nếu bạn có nhiều dấu trang hoặc thường xuyên đạt đến giới hạn, bạn có thể muốn tắt tính năng này.";
 
 /* Statistics error for iOS <16 */
 "This feature requires iOS 16 or newer." = "Tính năng này yêu cầu iOS 16 trở lên.";
@@ -1155,9 +1139,6 @@ Hit Distribution Stats: region */
 
 /* Request Log */
 "URL" = "URL";
-
-/* Missions Box: header, shown when a mission is not daily or weekly (should not happen unless Riot changes something) */
-"Uncategorized Missions" = "Nhiệm vụ chưa được phân loại";
 
 /* Shown when a match does not match the filter and its details have not been fetched. */
 "Unfetched" = "Chưa tìm thấy";
@@ -1202,9 +1183,6 @@ Trên trang web đó, hãy điều hướng đến **Riot Account Sign-in** và 
 /* placeholder */
 "Unknown Card" = "Thẻ người chơi không xác định";
 
-/* Store */
-"Unknown Offer" = "Ưu đãi không xác định";
-
 /* No comment provided by engineer. */
 "Unknown Player" = "Người chơi không xác định";
 
@@ -1232,9 +1210,6 @@ Round Details: killed by unknown/unspecified weapon */
 
 /* No comment provided by engineer. */
 "Unknown bundle!" = "Bộ sưu tập không xác định!";
-
-/* Missions Box */
-"Unknown contract!" = "Giao kèo không xác định!";
 
 /* Store Bundle Details: should never show, but if Riot adds a new kind of item to a bundle, this would show */
 "Unknown item of type %@" = "Vật phẩm không thể xác định loại %@";

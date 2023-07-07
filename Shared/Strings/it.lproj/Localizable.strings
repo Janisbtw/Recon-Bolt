@@ -65,10 +65,6 @@
 /* Time Formatting: minutes, seconds, & milliseconds (used in round details view) */
 "%lld:%@.%@" = "%lld:%@.%@";
 
-/* Contract Progress Bar
-Missions Box */
-"%lld / %lld XP" = "%lld / %lld XP";
-
 /* Win Rate Stats by Loadout Delta: focused value (drag on graph) */
 "(%lld – %lld)" = "(%lld – %lld)";
 
@@ -110,17 +106,14 @@ Tuttavia, le partite competitive possono essere identificate senza dover ottener
 /* No comment provided by engineer. */
 "About Recon Bolt" = "Informazioni su Recon Bolt";
 
+/* Store: accessory section */
+"Accessories" = "Accessori";
+
+/* Store: Accessory List: title */
+"Accessory Store" = "Negozio di Accessori";
+
 /* Settings: section */
 "Accounts" = "Accounts";
-
-/* Contract Picker: button */
-"Activate" = "Attiva";
-
-/* Contract Picker */
-"Active" = "Attivo";
-
-/* Missions Box: header */
-"Active Contract" = "Contratto attivo";
 
 /* Match List: accessibility label */
 "Add Bookmark" = "Aggiungi Segnalibro";
@@ -139,12 +132,6 @@ Tuttavia, le partite competitive possono essere identificate senza dover ottener
 
 /* No comment provided by engineer. */
 "Agent Select" = "Seleziona Agente";
-
-/* Contract Picker */
-"Agent Unlockable" = "Agente Sbloccabile";
-
-/* Contract Picker */
-"Agent Unlocked" = "Agente Sbloccato";
 
 /* Statistics filter: button */
 "Agents" = "Agenti";
@@ -212,8 +199,8 @@ Tuttavia, le partite competitive possono essere identificate senza dover ottener
 /* Settings: toggle */
 "Automatically Sign Back In" = "Accedi Automaticamente";
 
-/* Store: available currency */
-"Available:" = "Crediti Disponibili:";
+/* Bookmark/Player List: toggle */
+"Automatically Update Ranks" = "Aggiorna Automaticamente i Gradi";
 
 /* Hit Distribution Stats: average HS% */
 "Average: %@" = "Media: %@";
@@ -271,6 +258,12 @@ Playtime Stats: section */
 /* Weapon Reference */
 "Category" = "Categoria";
 
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month with a colorful look! (Free during June)" = "Festeggia il mese del Pride LGBTQ con un look colorato! (Free during June)";
+
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month, but in dark!" = "Festeggia il mese del Pride LGBTQ, ora anche in tema scuro!";
+
 /* No comment provided by engineer. */
 "Change Buddy" = "Cambia Accessorio";
 
@@ -307,9 +300,6 @@ Playtime Stats: section */
 /* No comment provided by engineer. */
 "Choose Title" = "Scegli il Titolo";
 
-/* Contract Picker: title */
-"Choose a Contract" = "Scegli un Contratto";
-
 /* Buddy Picker: alert shown when both instances of a buddy are in use */
 "Choose a weapon to take %@ from." = "Sceglie un'arma da cui prendere l'accessorio %@.";
 
@@ -319,14 +309,8 @@ Playtime Stats: section */
 /* Skin Details: section */
 "Color Variants" = "Variante Colore Skin";
 
-/* Contract Picker */
-"Completed" = "Completato";
-
 /* Storage Management: title for alert to confirm deleting some matches */
 "Confirm Delete" = "Conferma l'Eliminazione";
-
-/* Missions Box */
-"Contract complete!" = "Contratto completato!";
 
 /* Request Log: button to copy the request's body/contents (accessibility label) */
 "Copy Body" = "Copia il Contenuto";
@@ -389,7 +373,7 @@ Playtime Stats: section */
 "Daily" = "Giornaliero";
 
 /* Missions Box: header */
-"Daily Missions" = "Missioni Giornaliere";
+"Daily Checkpoints" = "Traguardi Giornalieri";
 
 /* Store */
 "Daily Offers" = "Offerte Giornaliere";
@@ -399,6 +383,9 @@ Playtime Stats: section */
 
 /* App Theme */
 "Dark Mode" = "Tema Scuro";
+
+/* App Icon Name */
+"Dark Rainbow" = "Arcobaleno Scuro";
 
 /* Stats: match loading */
 "Data going back to %@" = "Dati risalenti a %@";
@@ -519,9 +506,6 @@ SEGNALA I BUG QUI
 /* No comment provided by engineer. */
 "Force Refresh Widgets" = "Forza l'Aggiornamento dei Widget";
 
-/* Contract Picker */
-"Free Agent" = "Agente Gratis";
-
 /* Storage Management: button to free up a certain amount of space */
 "Free up these %@" = "Libera %@ di Memoria";
 
@@ -619,9 +603,6 @@ Weapon Reference: stats */
 
 /* Bookmark/Player List: player level */
 "Level %lld" = "Livello %lld";
-
-/* Contract Progress Bar */
-"Level %lld / %lld" = "Livello %lld/%lld";
 
 /* No comment provided by engineer. */
 "Lifetime Peak" = "Grado Massimo Raggiunto";
@@ -738,9 +719,6 @@ Se non conosci il tuo nome utente o non ne hai uno, puoi risolvere il problema s
 /* Asset Management */
 "Missing assets!" = "Assets mancanti!";
 
-/* Missions Box */
-"Missing progress for contract!" = "Mancano i progressi per il contratto!";
-
 /* No comment provided by engineer. */
 "Missing season data!" = "Dati della stagione mancanti!";
 
@@ -779,9 +757,6 @@ Se non conosci il tuo nome utente o non ne hai uno, puoi risolvere il problema s
 
 /* Gun Customizer: shown when a weapon has no buddy active */
 "No buddy selected!" = "Nessun accessorio selezionato!";
-
-/* Missions Box */
-"No contract active!" = "Nessun contratto attivo!";
 
 /* Win Rate Stats: by map */
 "No data" = "Nessun dato disponibile";
@@ -892,6 +867,9 @@ Playtime Stats: section */
 
 /* Statistics filter: button */
 "Queues" = "Modalità";
+
+/* App Icon Name */
+"Rainbow" = "Arcobaleno";
 
 /* Weapon Reference: stats */
 "Range" = "Distanza";
@@ -1051,6 +1029,12 @@ Login Form: button */
 /* Hit Distribution Stats: smoothing slider */
 "Smoothing" = "Errore di Fuoco";
 
+/* App Icon Picker: section */
+"Special Icons" = "Icone Speciali";
+
+/* App Icon Picker: section footer */
+"Special Icons are available year-round for Pro users, while free users can only select them during a certain time window." = "Le Icone Speciali sono disponibili tutto l'anno per gli utenti Pro, mentre per gli utenti gratuiti sono disponibili solo per un periodo limitato.";
+
 /* No comment provided by engineer. */
 "Spectator" = "Spettatore";
 
@@ -1093,9 +1077,6 @@ Login Form: button */
 /* Pro Store */
 "Support Further Development!" = "Sostieni i Futuri Aggiornamenti!";
 
-/* Missions Box: button */
-"Switch Contract" = "Cambia Contratto";
-
 /* Login Form: is this safe? */
 "TL;DR: you'll have to take my word for it, but Riot doesn't seem to mind." = "TL;DR: Dovete fidarvi della mia parola, non verrete bannati per aver usato Recon Bolt.";
 
@@ -1111,7 +1092,7 @@ Login Form: button */
 /* App Icon Description: default */
 "The default look of Recon Bolt." = "L'aspetto predefinito di Recon Bolt.";
 
-/* No comment provided by engineer. */
+/* App Icon Picker: section footer */
 "The pro version lets you change the app icon! More icons might be coming in future updates." = "La versione Pro consente di cambiare l'icona dell'app! Potrebbero essere disponibili altre icone nei prossimi aggiornamenti.";
 
 /* Settings: picker */
@@ -1119,6 +1100,9 @@ Login Form: button */
 
 /* No comment provided by engineer. */
 "These are the last %lld requests sent by the app, along with their responses." = "Queste sono le ultime %lld richieste inviate all'API, insieme alle relative risposte.";
+
+/* Bookmark/Player List: toggle description */
+"This can cause a lot of requests. If you have many bookmarks or are often hitting the rate limit, you might prefer to turn this off." = "Questo può causare molte richieste all'API. Se hai molti preferiti o se stai spesso superando il limite di velocità, potresti preferire disattivare questa funzione.";
 
 /* Statistics error for iOS <16 */
 "This feature requires iOS 16 or newer." = "Questa funzione richiede iOS 16 o versioni successive.";
@@ -1147,9 +1131,6 @@ Hit Distribution Stats: region */
 
 /* Request Log */
 "URL" = "URL";
-
-/* Missions Box: header, shown when a mission is not daily or weekly (should not happen unless Riot changes something) */
-"Uncategorized Missions" = "Missioni senza Categoria";
 
 /* Shown when a match does not match the filter and its details have not been fetched. */
 "Unfetched" = "Non Trovato";
@@ -1194,9 +1175,6 @@ Sul sito, vai su **Accesso account Riot** e imposta un nome utente e una passwor
 /* placeholder */
 "Unknown Card" = "Carta Sconosciuta";
 
-/* Store */
-"Unknown Offer" = "Offerta Sconosciuta";
-
 /* No comment provided by engineer. */
 "Unknown Player" = "Giocatore Sconosciuto";
 
@@ -1224,9 +1202,6 @@ Round Details: killed by unknown/unspecified weapon */
 
 /* No comment provided by engineer. */
 "Unknown bundle!" = "Bundle Sconosciuto!";
-
-/* Missions Box */
-"Unknown contract!" = "Contratto Sconosciuto!";
 
 /* Store Bundle Details: should never show, but if Riot adds a new kind of item to a bundle, this would show */
 "Unknown item of type %@" = "Oggetto Sconosciuto del Tipo %@";

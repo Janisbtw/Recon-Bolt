@@ -3,7 +3,6 @@ import ValorantAPI
 
 struct StoreDetailsView: View {
 	var updateTime: Date
-	var offers: [StoreOffer.ID: StoreOffer]
 	var storefront: Storefront
 	var wallet: StoreWallet
 	
@@ -11,17 +10,35 @@ struct StoreDetailsView: View {
 	
 	@Environment(\.assets) private var assets
 	
-	private static let currencies: [Currency.ID] = [.valorantPoints, .radianitePoints]
+	private static let currencies: [Currency.ID] = [.valorantPoints, .radianitePoints, .kingdomCredits]
 	
 	var body: some View {
-		Divider()
-		
 		VStack(spacing: 16) {
 			ForEach(storefront.featuredBundle.bundles) { bundle in
 				NavigationLink {
 					BundleDetailsView(bundle: bundle)
 				} label: {
 					bundleCell(for: bundle)
+						.background(Color.tertiaryGroupedBackground)
+						.cornerRadius(8)
+						.tint(.primary)
+				}
+			}
+			
+			if let offers = storefront.accessoryStore.offers {
+				NavigationLink {
+					AccessoryStoreView(
+						accessoryStore: storefront.accessoryStore
+					) {
+						HStack {
+							remainingTimeLabel(storefront.accessoryStore.remainingDuration)
+								.foregroundColor(.primary) // secondary relative to this
+							Spacer()
+							CurrencyLabel(amount: wallet[.kingdomCredits], currencyID: .kingdomCredits)
+						}
+					}
+				} label: {
+					accessoryStoreCell(offers: offers)
 						.background(Color.tertiaryGroupedBackground)
 						.cornerRadius(8)
 						.tint(.primary)
@@ -53,19 +70,11 @@ struct StoreDetailsView: View {
 				
 				Spacer()
 				
-				remainingTimeLabel(storefront.skinsPanelLayout.remainingDuration)
+				remainingTimeLabel(storefront.dailySkinStore.remainingDuration)
 			}
 			
-			ForEach(storefront.skinsPanelLayout.singleItemOffers, id: \.self) { offerID in
-				if let offer = offers[offerID] {
-					OfferCell(offer: offer)
-				} else {
-					Text("Unknown Offer", comment: "Store")
-						.foregroundStyle(.secondary)
-						.padding()
-						.frame(maxWidth: .infinity)
-						.background(Color.tertiaryGroupedBackground)
-				}
+			ForEach(storefront.dailySkinStore.offers) { offer in
+				OfferCell(offer: offer)
 			}
 			.cornerRadius(8)
 		}
@@ -74,14 +83,17 @@ struct StoreDetailsView: View {
 		Divider()
 		
 		HStack(spacing: 20) {
-			Text("Available:", comment: "Store: available currency")
+			Image(systemName: "briefcase")
+				.foregroundStyle(.secondary)
 			
-			Spacer()
+			Spacer(minLength: 0)
 			
 			ForEach(Self.currencies, id: \.self) { currency in
 				CurrencyLabel(amount: wallet[currency], currencyID: currency)
 			}
 		}
+		.minimumScaleFactor(0.5)
+		.lineLimit(1)
 		.padding()
 	}
 	
@@ -146,6 +158,51 @@ struct StoreDetailsView: View {
 		.font(.caption.weight(.medium))
 		.foregroundStyle(.secondary)
 	}
+	
+	func accessoryStoreCell(offers: [Storefront.AccessoryStore.Offer]) -> some View {
+		VStack(spacing: 12) {
+			HStack {
+				ForEach(offers, id: \.offer.id) { offer in
+					icon(for: offer.offer.rewards.first!)
+						.frame(width: 60, height: 60)
+				}
+			}
+			
+			Divider()
+			
+			HStack {
+				Text("Accessories", comment: "Store: accessory section")
+				
+				Spacer()
+				
+				remainingTimeLabel(storefront.accessoryStore.remainingDuration)
+				Image(systemName: "chevron.right")
+					.foregroundStyle(.secondary)
+			}
+		}
+		.font(.body.weight(.medium))
+		.imageScale(.small)
+		.padding(12)
+	}
+	
+	@ViewBuilder
+	func icon(for reward: StoreOffer.Reward) -> some View {
+		switch reward.itemTypeID {
+		case .buddies:
+			(assets?.resolveBuddy(.init(rawID: reward.itemID))?.displayIcon).view()
+		case .sprays:
+			(assets?.sprays[.init(rawID: reward.itemID)]?.bestIcon).view()
+		case .cards:
+			(assets?.playerCards[.init(rawID: reward.itemID)]?.smallArt).view()
+				.cornerRadius(8)
+		case .titles:
+			Image("Player Title")
+				.resizable()
+				.foregroundStyle(.secondary)
+		default:
+			EmptyView()
+		}
+	}
 }
 
 struct OfferCell: View {
@@ -193,9 +250,38 @@ struct OfferCell: View {
 			}
 			.padding(12)
 			.foregroundColor(tier?.color?.opacity(10), adjustedFor: colorScheme)
-			.background(tier?.color?.opacity(1.5))
+			.background(tier?.color?.opacity(1.0))
 		}
 		.disabled(resolved == nil)
+	}
+}
+
+struct AccessoryStoreView<Footer: View>: View {
+	var accessoryStore: Storefront.AccessoryStore
+	@ViewBuilder var footer: Footer
+	@State var fullscreenImages: AssetImageCollection?
+	
+	@Environment(\.assets) private var assets
+	
+	var body: some View {
+		List {
+			Section {
+				ForEach(accessoryStore.offers ?? [], id: \.offer.id, content: row(for:))
+			} footer: {
+				footer
+			}
+		}
+		.navigationTitle(Text("Accessory Store", comment: "Store: Accessory List: title"))
+		.lightbox(for: $fullscreenImages)
+	}
+	
+	@ViewBuilder
+	func row(for accessoryOffer: Storefront.AccessoryStore.Offer) -> some View {
+		let offer = accessoryOffer.offer
+		StoreItemView(item: offer.rewards.first!, fullscreenImages: $fullscreenImages) {
+			let (currency, amount) = offer.cost.first!
+			CurrencyLabel(amount: amount, currencyID: currency)
+		}
 	}
 }
 
@@ -218,7 +304,6 @@ struct CurrencyLabel: View {
 	var body: some View {
 		HStack {
 			Text("\(amount)")
-				.monospacedDigit()
 			let currency = assets?.currencies[currencyID]
 			currency?.displayIcon.view(renderingMode: .template)
 				.frame(width: iconSize, height: iconSize)
@@ -240,7 +325,6 @@ struct StoreDetailsView_Previews: PreviewProvider {
 			RefreshableBox(title: "Store", isExpanded: .constant(true)) {
 				StoreDetailsView(
 					updateTime: .now,
-					offers: .init(values: PreviewData.storeOffers),
 					storefront: PreviewData.storefront,
 					wallet: PreviewData.storeWallet
 				)

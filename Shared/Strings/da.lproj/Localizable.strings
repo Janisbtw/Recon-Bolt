@@ -65,10 +65,6 @@
 /* Time Formatting: minutes, seconds, & milliseconds (used in round details view) */
 "%lld:%@.%@" = "%lld:%@.%@";
 
-/* Contract Progress Bar
-Missions Box */
-"%lld / %lld XP" = "%lld/%lld XP";
-
 /* Win Rate Stats by Loadout Delta: focused value (drag on graph) */
 "(%lld – %lld)" = "(%lld - %lld)";
 
@@ -113,15 +109,6 @@ competetive kampe efter dine placements kan dog identificeres uden deres detalje
 /* Settings: section */
 "Accounts" = "Konti";
 
-/* Contract Picker: button */
-"Activate" = "Aktivér";
-
-/* Contract Picker */
-"Active" = "Aktiv";
-
-/* Missions Box: header */
-"Active Contract" = "Aktiv kontrakt";
-
 /* Match List: accessibility label */
 "Add Bookmark" = "Tilføj bogmærke";
 
@@ -139,12 +126,6 @@ competetive kampe efter dine placements kan dog identificeres uden deres detalje
 
 /* No comment provided by engineer. */
 "Agent Select" = "Agent Select";
-
-/* Contract Picker */
-"Agent Unlockable" = "Agent, ikke låsbar";
-
-/* Contract Picker */
-"Agent Unlocked" = "Agent låst op";
 
 /* Statistics filter: button */
 "Agents" = "Agenter";
@@ -208,9 +189,6 @@ competetive kampe efter dine placements kan dog identificeres uden deres detalje
 
 /* Settings: toggle */
 "Automatically Sign Back In" = "Log Automatisk På Igen";
-
-/* Store: available currency */
-"Available:" = "Tilgængelig:";
 
 /* Hit Distribution Stats: average HS% */
 "Average: %@" = "Gennemsnit: %@";
@@ -301,9 +279,6 @@ Playtime Stats: section */
 /* No comment provided by engineer. */
 "Choose Title" = "Vælg titel";
 
-/* Contract Picker: title */
-"Choose a Contract" = "Vælg en kontrakt";
-
 /* Buddy Picker: alert shown when both instances of a buddy are in use */
 "Choose a weapon to take %@ from." = "Vælg et våben til at tage %@ fra.";
 
@@ -313,14 +288,8 @@ Playtime Stats: section */
 /* Skin Details: section */
 "Color Variants" = "Farvevarianter";
 
-/* Contract Picker */
-"Completed" = "Færdiggjort";
-
 /* Storage Management: title for alert to confirm deleting some matches */
 "Confirm Delete" = "Bekræft Sletning";
-
-/* Missions Box */
-"Contract complete!" = "Kontrakten er afsluttet!";
 
 /* Request Log: button to copy the request's body/contents (accessibility label) */
 "Copy Body" = "Kopiér";
@@ -381,9 +350,6 @@ Playtime Stats: section */
 
 /* Missions Widget */
 "Daily" = "Dagligt";
-
-/* Missions Box: header */
-"Daily Missions" = "Daglige missioner";
 
 /* Store */
 "Daily Offers" = "Daglige tilbud";
@@ -513,9 +479,6 @@ DIN FEJLRAPPORT HER
 /* No comment provided by engineer. */
 "Force Refresh Widgets" = "Tvinge opdatering af widgets";
 
-/* Contract Picker */
-"Free Agent" = "Gratis Agent";
-
 /* Storage Management: button to free up a certain amount of space */
 "Free up these %@" = "Frigør disse %@";
 
@@ -613,9 +576,6 @@ Weapon Reference: stats */
 
 /* Bookmark/Player List: player level */
 "Level %lld" = "Level %lld";
-
-/* Contract Progress Bar */
-"Level %lld / %lld" = "Level %lld / %lld";
 
 /* No comment provided by engineer. */
 "Lifetime Peak" = "Livstid Peak";
@@ -732,9 +692,6 @@ Hvis du ikke kender dit brugernavn eller ikke har et, kan du rette det på [acco
 /* Asset Management */
 "Missing assets!" = "Manglende aktiver!";
 
-/* Missions Box */
-"Missing progress for contract!" = "Manglende fremskridt for kontrakt!";
-
 /* No comment provided by engineer. */
 "Missing season data!" = "Manglende session data!";
 
@@ -773,9 +730,6 @@ Hvis du ikke kender dit brugernavn eller ikke har et, kan du rette det på [acco
 
 /* Gun Customizer: shown when a weapon has no buddy active */
 "No buddy selected!" = "Ingen buddy valgt!";
-
-/* Missions Box */
-"No contract active!" = "Ingen kontrakt er aktiv!";
 
 /* Win Rate Stats: by map */
 "No data" = "Ingen data";
@@ -1084,9 +1038,6 @@ Login Form: button */
 /* Pro Store */
 "Support Further Development!" = "Støt yderligere udvikling!";
 
-/* Missions Box: button */
-"Switch Contract" = "Skift kontrakt";
-
 /* Login Form: is this safe? */
 "TL;DR: you'll have to take my word for it, but Riot doesn't seem to mind." = "TL;DR: Du må tage mit ord for gode varer, men Riot lader ikke til at have noget imod det.";
 
@@ -1102,7 +1053,7 @@ Login Form: button */
 /* App Icon Description: default */
 "The default look of Recon Bolt." = "Standard udseendet for Recon Bolt.";
 
-/* No comment provided by engineer. */
+/* App Icon Picker: section footer */
 "The pro version lets you change the app icon! More icons might be coming in future updates." = "I pro-versionen kan du ændre app-ikonet! Der kan komme flere ikoner i fremtidige opdateringer.";
 
 /* Settings: picker */
@@ -1139,9 +1090,6 @@ Hit Distribution Stats: region */
 /* Request Log */
 "URL" = "URL";
 
-/* Missions Box: header, shown when a mission is not daily or weekly (should not happen unless Riot changes something) */
-"Uncategorized Missions" = "Ikke-Kategoriseret Missioner";
-
 /* Shown when a match does not match the filter and its details have not been fetched. */
 "Unfetched" = "Unfetched";
 
@@ -1174,9 +1122,6 @@ På dette websted skal du navigere til **Riot Account Sign-in** og angive et bru
 /* placeholder */
 "Unknown Card" = "Ukendt kort";
 
-/* Store */
-"Unknown Offer" = "Ukendt tilbud";
-
 /* No comment provided by engineer. */
 "Unknown Player" = "Ukendt spiller";
 
@@ -1204,9 +1149,6 @@ Round Details: killed by unknown/unspecified weapon */
 
 /* No comment provided by engineer. */
 "Unknown bundle!" = "Ukendt Bundle!";
-
-/* Missions Box */
-"Unknown contract!" = "Ukendt kontrakt!";
 
 /* Store Bundle Details: should never show, but if Riot adds a new kind of item to a bundle, this would show */
 "Unknown item of type %@" = "Ukendt genstand af typen %@";

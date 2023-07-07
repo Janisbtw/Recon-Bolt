@@ -65,10 +65,6 @@
 /* Time Formatting: minutes, seconds, & milliseconds (used in round details view) */
 "%lld:%@.%@" = "%lld:%@.%@";
 
-/* Contract Progress Bar
-Missions Box */
-"%lld / %lld XP" = "%lld / %lld XP";
-
 /* Win Rate Stats by Loadout Delta: focused value (drag on graph) */
 "(%lld – %lld)" = "(%lld – %lld)";
 
@@ -110,17 +106,14 @@ Az elhelyezés utáni versenyszerű mérkőzések azonban az adataik nélkül is
 /* No comment provided by engineer. */
 "About Recon Bolt" = "A Recon Boltról";
 
+/* Store: accessory section */
+"Accessories" = "Kiegészítők";
+
+/* Store: Accessory List: title */
+"Accessory Store" = "Kiegészítő bolt";
+
 /* Settings: section */
 "Accounts" = "Fiókok";
-
-/* Contract Picker: button */
-"Activate" = "Aktiválás";
-
-/* Contract Picker */
-"Active" = "Aktív";
-
-/* Missions Box: header */
-"Active Contract" = "Aktív Contract";
 
 /* Match List: accessibility label */
 "Add Bookmark" = "Könyvjelző hozzáadása";
@@ -139,12 +132,6 @@ Az elhelyezés utáni versenyszerű mérkőzések azonban az adataik nélkül is
 
 /* No comment provided by engineer. */
 "Agent Select" = "Agent választó";
-
-/* Contract Picker */
-"Agent Unlockable" = "Ügynök feloldható";
-
-/* Contract Picker */
-"Agent Unlocked" = "Ügynök feloldva";
 
 /* Statistics filter: button */
 "Agents" = "Ügynökök";
@@ -212,8 +199,8 @@ Az elhelyezés utáni versenyszerű mérkőzések azonban az adataik nélkül is
 /* Settings: toggle */
 "Automatically Sign Back In" = "Automatikus visszajelentkezés";
 
-/* Store: available currency */
-"Available:" = "Elérhető:";
+/* Bookmark/Player List: toggle */
+"Automatically Update Ranks" = "Rangok automatikus frissítése";
 
 /* Hit Distribution Stats: average HS% */
 "Average: %@" = "Átlagosan: %@";
@@ -271,6 +258,12 @@ Playtime Stats: section */
 /* Weapon Reference */
 "Category" = "Kategória";
 
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month with a colorful look! (Free during June)" = "Ünnepeld az LMBTQ Pride hónapot egy színes megjelenéssel! (Júniusban ingyenes)";
+
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month, but in dark!" = "Ünnepeld az LMBTQ Pride hónapot, de sötétben!";
+
 /* No comment provided by engineer. */
 "Change Buddy" = "Buddy váltás";
 
@@ -307,9 +300,6 @@ Playtime Stats: section */
 /* No comment provided by engineer. */
 "Choose Title" = "Válasszon feliratot";
 
-/* Contract Picker: title */
-"Choose a Contract" = "Válasszon Contract-ot";
-
 /* Buddy Picker: alert shown when both instances of a buddy are in use */
 "Choose a weapon to take %@ from." = "Vállasszon egy fegyvert a %@ tól/től.";
 
@@ -319,14 +309,8 @@ Playtime Stats: section */
 /* Skin Details: section */
 "Color Variants" = "Színváltozatok";
 
-/* Contract Picker */
-"Completed" = "Befejezett";
-
 /* Storage Management: title for alert to confirm deleting some matches */
 "Confirm Delete" = "Törlés megerősítése";
-
-/* Missions Box */
-"Contract complete!" = "Contract teljesítve!";
 
 /* Request Log: button to copy the request's body/contents (accessibility label) */
 "Copy Body" = "Test másolása";
@@ -389,7 +373,7 @@ Playtime Stats: section */
 "Daily" = "Napi";
 
 /* Missions Box: header */
-"Daily Missions" = "Napi küldetések";
+"Daily Checkpoints" = "Napi ellenőrző pontok";
 
 /* Store */
 "Daily Offers" = "Nepi ajánlatok";
@@ -399,6 +383,9 @@ Playtime Stats: section */
 
 /* App Theme */
 "Dark Mode" = "Sötét üzemmód";
+
+/* App Icon Name */
+"Dark Rainbow" = "Sötét szivárvány";
 
 /* Stats: match loading */
 "Data going back to %@" = "Az adatok visszamennek ide: %@";
@@ -519,9 +506,6 @@ HIBAJELENTÉSED ITT:
 /* No comment provided by engineer. */
 "Force Refresh Widgets" = "Widgetek kényszerfrissítése";
 
-/* Contract Picker */
-"Free Agent" = "Ingyenes ügynök";
-
 /* Storage Management: button to free up a certain amount of space */
 "Free up these %@" = "Szabadítsd fel ezeket a %@";
 
@@ -619,9 +603,6 @@ Weapon Reference: stats */
 
 /* Bookmark/Player List: player level */
 "Level %lld" = "Szint %lld";
-
-/* Contract Progress Bar */
-"Level %lld / %lld" = "Szint %lld/%lld";
 
 /* No comment provided by engineer. */
 "Lifetime Peak" = "Eddigi legmagasabb rank";
@@ -738,9 +719,6 @@ Ha nem tudod a felhasználóneved, vagy nincs, akkor ezt a [account.riotgames.co
 /* Asset Management */
 "Missing assets!" = "Hiányzó tartalmak!";
 
-/* Missions Box */
-"Missing progress for contract!" = "Hiányzó előrelépés a szerződéshez!";
-
 /* No comment provided by engineer. */
 "Missing season data!" = "Hiányzó szezonadatok!";
 
@@ -779,9 +757,6 @@ Ha nem tudod a felhasználóneved, vagy nincs, akkor ezt a [account.riotgames.co
 
 /* Gun Customizer: shown when a weapon has no buddy active */
 "No buddy selected!" = "Nincs kiválasztott buddy!";
-
-/* Missions Box */
-"No contract active!" = "Nincs aktív contract!";
 
 /* Win Rate Stats: by map */
 "No data" = "Nincs adat";
@@ -892,6 +867,9 @@ Playtime Stats: section */
 
 /* Statistics filter: button */
 "Queues" = "Queues";
+
+/* App Icon Name */
+"Rainbow" = "Szivárvány";
 
 /* Weapon Reference: stats */
 "Range" = "Tartomány";
@@ -1051,6 +1029,12 @@ Login Form: button */
 /* Hit Distribution Stats: smoothing slider */
 "Smoothing" = "Simítás";
 
+/* App Icon Picker: section */
+"Special Icons" = "Exklúzív ikonok";
+
+/* App Icon Picker: section footer */
+"Special Icons are available year-round for Pro users, while free users can only select them during a certain time window." = "Az Exklúzív ikonok egész évben elérhetőek a Pro felhasználók számára, míg az ingyenes felhasználók csak egy bizonyos időablakban választhatják ki őket.";
+
 /* No comment provided by engineer. */
 "Spectator" = "Néző";
 
@@ -1093,9 +1077,6 @@ Login Form: button */
 /* Pro Store */
 "Support Further Development!" = "Támogassa a további fejlődést!";
 
-/* Missions Box: button */
-"Switch Contract" = "Contract váltás";
-
 /* Login Form: is this safe? */
 "TL;DR: you'll have to take my word for it, but Riot doesn't seem to mind." = "TL;DR: el kell hinned a szavamat, de úgy tűnik, a Riot nem bánja.";
 
@@ -1111,7 +1092,7 @@ Login Form: button */
 /* App Icon Description: default */
 "The default look of Recon Bolt." = "A Recon Bolt alapértelmezett megjelenése.";
 
-/* No comment provided by engineer. */
+/* App Icon Picker: section footer */
 "The pro version lets you change the app icon! More icons might be coming in future updates." = "A pro verzió lehetővé teszi az alkalmazás ikonjának megváltoztatását! A jövőbeni frissítésekben további ikonok is megjelenhetnek.";
 
 /* Settings: picker */
@@ -1119,6 +1100,9 @@ Login Form: button */
 
 /* No comment provided by engineer. */
 "These are the last %lld requests sent by the app, along with their responses." = "Ezek az alkalmazás által küldött utolsó %lld kérések és a válaszok.";
+
+/* Bookmark/Player List: toggle description */
+"This can cause a lot of requests. If you have many bookmarks or are often hitting the rate limit, you might prefer to turn this off." = "Ez rengeteg kérést okozhat. Ha sok könyvjelzője van, vagy gyakran eléri a sebességhatárt, akkor ezt inkább kapcsolja ki.";
 
 /* Statistics error for iOS <16 */
 "This feature requires iOS 16 or newer." = "Ez a funkció iOS 16 vagy újabb iOS-t igényel.";
@@ -1147,9 +1131,6 @@ Hit Distribution Stats: region */
 
 /* Request Log */
 "URL" = "URL";
-
-/* Missions Box: header, shown when a mission is not daily or weekly (should not happen unless Riot changes something) */
-"Uncategorized Missions" = "Kategorizálatlan küldetések";
 
 /* Shown when a match does not match the filter and its details have not been fetched. */
 "Unfetched" = "Unfetched";
@@ -1194,9 +1175,6 @@ Ezen az oldalon navigálj a **Riot Account Sign-in** menüpontra, és állíts b
 /* placeholder */
 "Unknown Card" = "Ismeretlen kártya";
 
-/* Store */
-"Unknown Offer" = "Ismeretlen tétel";
-
 /* No comment provided by engineer. */
 "Unknown Player" = "Ismeretlen játékos";
 
@@ -1224,9 +1202,6 @@ Round Details: killed by unknown/unspecified weapon */
 
 /* No comment provided by engineer. */
 "Unknown bundle!" = "Ismeretlen Bundle!";
-
-/* Missions Box */
-"Unknown contract!" = "Ismeretlen Contract!";
 
 /* Store Bundle Details: should never show, but if Riot adds a new kind of item to a bundle, this would show */
 "Unknown item of type %@" = "Ismeretlen típusú elem %@";

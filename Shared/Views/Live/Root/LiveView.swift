@@ -6,9 +6,9 @@ import UserDefault
 
 struct LiveView: View {
 	let userID: User.ID
-	@State var contractDetails: ContractDetails? {
+	@State var contractsProgress: ContractsProgress? {
 		didSet {
-			if let oldValue, let contractDetails, contractDetails != oldValue {
+			if let oldValue, let contractsProgress, contractsProgress.contracts != oldValue.contracts {
 				WidgetCenter.shared.reloadTimelines(ofKind: "view missions")
 			}
 		}
@@ -55,11 +55,11 @@ struct LiveView: View {
 	
 	var missionsBox: some View {
 		RefreshableBox(title: "Missions", isExpanded: $expandedBoxes.contains(.missions)) {
-			infoOrPlaceholder(placeholder: "Missions not loaded!", contractDetails) {
-				ContractDetailsView(contracts: .init(details: $0, assets: assets, seasons: seasons))
+			infoOrPlaceholder(placeholder: "Missions not loaded!", contractsProgress) {
+				ContractDetailsView(contracts: .init(progress: $0, assets: assets, seasons: seasons))
 			}
 		} refresh: {
-			contractDetails = try await $0.getContractDetails()
+			contractsProgress = try await $0.getContractsProgress()
 		}
 		.id(missionsBoxID)
 	}
@@ -83,7 +83,7 @@ struct LiveView: View {
 			infoOrPlaceholder(placeholder: "Store not loaded!", storeInfo) { info in
 				StoreDetailsView(
 					updateTime: info.updateTime,
-					offers: info.offers, storefront: info.storefront, wallet: info.wallet
+					storefront: info.storefront, wallet: info.wallet
 				)
 			}
 		} refresh: {
@@ -181,18 +181,15 @@ private struct LoadoutInfo {
 
 private struct StoreInfo {
 	var updateTime: Date
-	var offers: [StoreOffer.ID: StoreOffer]
 	var storefront: Storefront
 	var wallet: StoreWallet
 }
 
 extension StoreInfo {
 	init(using client: ValorantClient) async throws {
-		async let offers = client.getStoreOffers()
 		async let storefront = client.getStorefront()
 		async let wallet = client.getStoreWallet()
 		
-		self.offers = try await .init(values: offers)
 		self.storefront = try await storefront
 		self.wallet = try await wallet
 		self.updateTime = .now
@@ -224,7 +221,7 @@ struct LiveView_Previews: PreviewProvider {
 	static var previews: some View {
 		LiveView(
 			userID: PreviewData.userID,
-			contractDetails: PreviewData.contractDetails
+			contractsProgress: PreviewData.contractsProgress
 		)
 		.withToolbar()
 	}

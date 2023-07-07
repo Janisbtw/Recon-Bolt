@@ -65,10 +65,6 @@
 /* Time Formatting: minutes, seconds, & milliseconds (used in round details view) */
 "%lld:%@.%@" = "%lld:%@.%@";
 
-/* Contract Progress Bar
-Missions Box */
-"%lld / %lld XP" = "%lld / %lld XP";
-
 /* Win Rate Stats by Loadout Delta: focused value (drag on graph) */
 "(%lld – %lld)" = "(%lld – %lld)";
 
@@ -109,17 +105,14 @@ Competitive matches after your placements can be identified without their detail
 /* No comment provided by engineer. */
 "About Recon Bolt" = "Tentang Recon Bolt";
 
+/* Store: accessory section */
+"Accessories" = "Aksesoris";
+
+/* Store: Accessory List: title */
+"Accessory Store" = "Toko Aksesoris";
+
 /* Settings: section */
 "Accounts" = "Akun";
-
-/* Contract Picker: button */
-"Activate" = "Aktifkan";
-
-/* Contract Picker */
-"Active" = "Aktif";
-
-/* Missions Box: header */
-"Active Contract" = "Kontrak Aktif";
 
 /* Match List: accessibility label */
 "Add Bookmark" = "Tambahkan Penanda";
@@ -138,12 +131,6 @@ Competitive matches after your placements can be identified without their detail
 
 /* No comment provided by engineer. */
 "Agent Select" = "Pilih Agen";
-
-/* Contract Picker */
-"Agent Unlockable" = "Agen Tidak Dapat Dikunci";
-
-/* Contract Picker */
-"Agent Unlocked" = "Agen Tidak Terkunci";
 
 /* Statistics filter: button */
 "Agents" = "Agen";
@@ -211,8 +198,8 @@ Competitive matches after your placements can be identified without their detail
 /* Settings: toggle */
 "Automatically Sign Back In" = "Masuk Kembali secara otomatis";
 
-/* Store: available currency */
-"Available:" = "Tersedia:";
+/* Bookmark/Player List: toggle */
+"Automatically Update Ranks" = "Otomatis Memperbarui Rank";
 
 /* Hit Distribution Stats: average HS% */
 "Average: %@" = "Rata-rata: %@";
@@ -270,6 +257,12 @@ Playtime Stats: section */
 /* Weapon Reference */
 "Category" = "Kategori";
 
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month with a colorful look! (Free during June)" = "Rayakan bulan LGBTQ dengan tampilan penuh warna! (Gratis selama di bulan Juni)";
+
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month, but in dark!" = "Rayakan bulan LGBTQ, di dalam kegelapan!";
+
 /* No comment provided by engineer. */
 "Change Buddy" = "Ubah Buddy";
 
@@ -306,9 +299,6 @@ Playtime Stats: section */
 /* No comment provided by engineer. */
 "Choose Title" = "Pilih Title";
 
-/* Contract Picker: title */
-"Choose a Contract" = "Pilih Kontrak Agen";
-
 /* Buddy Picker: alert shown when both instances of a buddy are in use */
 "Choose a weapon to take %@ from." = "Pilih senjata yang akan diambil dari %@.";
 
@@ -318,14 +308,8 @@ Playtime Stats: section */
 /* Skin Details: section */
 "Color Variants" = "Varian Warna";
 
-/* Contract Picker */
-"Completed" = "Selesai";
-
 /* Storage Management: title for alert to confirm deleting some matches */
 "Confirm Delete" = "Konfirmasi Hapus";
-
-/* Missions Box */
-"Contract complete!" = "Kontrak agen telah diselesaikan!";
 
 /* Request Log: button to copy the request's body/contents (accessibility label) */
 "Copy Body" = "Copy Body";
@@ -388,7 +372,7 @@ Playtime Stats: section */
 "Daily" = "Harian";
 
 /* Missions Box: header */
-"Daily Missions" = "Misi Harian";
+"Daily Checkpoints" = "Checkpoint Harian";
 
 /* Store */
 "Daily Offers" = "Penawaran Harian";
@@ -398,6 +382,9 @@ Playtime Stats: section */
 
 /* App Theme */
 "Dark Mode" = "Mode Gelap";
+
+/* App Icon Name */
+"Dark Rainbow" = "Pelangi Gelap";
 
 /* Stats: match loading */
 "Data going back to %@" = "Mengembalikan data ke %@";
@@ -518,9 +505,6 @@ LAPORKAN BUG ANDA DISINI
 /* No comment provided by engineer. */
 "Force Refresh Widgets" = "Memaksa Refresh Widget";
 
-/* Contract Picker */
-"Free Agent" = "Agen Gratis";
-
 /* Storage Management: button to free up a certain amount of space */
 "Free up these %@" = "Membersihkan penyimpanan lokal %@";
 
@@ -618,9 +602,6 @@ Weapon Reference: stats */
 
 /* Bookmark/Player List: player level */
 "Level %lld" = "Level %lld";
-
-/* Contract Progress Bar */
-"Level %lld / %lld" = "Level %lld / %lld";
 
 /* No comment provided by engineer. */
 "Lifetime Peak" = "Rank Tertinggi";
@@ -737,9 +718,6 @@ Jika Anda tidak tahu nama pengguna Anda atau belum memilikinya, Anda dapat mempe
 /* Asset Management */
 "Missing assets!" = "Beberapa aset hilang!";
 
-/* Missions Box */
-"Missing progress for contract!" = "Tidak ada progress untuk kontrak!";
-
 /* No comment provided by engineer. */
 "Missing season data!" = "Data musim tidak ada!";
 
@@ -778,9 +756,6 @@ Jika Anda tidak tahu nama pengguna Anda atau belum memilikinya, Anda dapat mempe
 
 /* Gun Customizer: shown when a weapon has no buddy active */
 "No buddy selected!" = "Tidak ada Buddy yang dipilih!";
-
-/* Missions Box */
-"No contract active!" = "Tidak ada kontrak Agen yang aktif!";
 
 /* Win Rate Stats: by map */
 "No data" = "Tidak ada data";
@@ -891,6 +866,9 @@ Playtime Stats: section */
 
 /* Statistics filter: button */
 "Queues" = "Antrian";
+
+/* App Icon Name */
+"Rainbow" = "Pelangi";
 
 /* Weapon Reference: stats */
 "Range" = "Jangkauan";
@@ -1050,6 +1028,12 @@ Login Form: button */
 /* Hit Distribution Stats: smoothing slider */
 "Smoothing" = "Menghaluskan";
 
+/* App Icon Picker: section */
+"Special Icons" = "Ikon Spesial";
+
+/* App Icon Picker: section footer */
+"Special Icons are available year-round for Pro users, while free users can only select them during a certain time window." = "Ikon Spesial akan tersedia sepanjang tahun untuk pengguna Pro, sedangkan pengguna gratis hanya dapat memilihnya selama waktu tertentu.";
+
 /* No comment provided by engineer. */
 "Spectator" = "Penonton";
 
@@ -1092,9 +1076,6 @@ Login Form: button */
 /* Pro Store */
 "Support Further Development!" = "Dukung Pengembangan Lebih Lanjut!";
 
-/* Missions Box: button */
-"Switch Contract" = "Beralih Kontrak";
-
 /* Login Form: is this safe? */
 "TL;DR: you'll have to take my word for it, but Riot doesn't seem to mind." = "Inti: Anda dapat mempercayai kata-kata saya, sepertinya Riot tampaknya tidak keberatan.";
 
@@ -1110,7 +1091,7 @@ Login Form: button */
 /* App Icon Description: default */
 "The default look of Recon Bolt." = "Ikon default dari Recon Bolt.";
 
-/* No comment provided by engineer. */
+/* App Icon Picker: section footer */
 "The pro version lets you change the app icon! More icons might be coming in future updates." = "Versi pro memungkinkan Anda mengubah ikon aplikasi! Kami mungkin akan menambahkan ikon lain di update selanjutnya.";
 
 /* Settings: picker */
@@ -1118,6 +1099,9 @@ Login Form: button */
 
 /* No comment provided by engineer. */
 "These are the last %lld requests sent by the app, along with their responses." = "Ini adalah %lld permintaan terakhir yang dikirim lewat aplikasi beserta dengan response nya.";
+
+/* Bookmark/Player List: toggle description */
+"This can cause a lot of requests. If you have many bookmarks or are often hitting the rate limit, you might prefer to turn this off." = "Hal ini dapat menyebabkan banyak permintaan. Jika Anda memiliki banyak bookmark atau sering mencapai batas kecepatan, Anda mungkin lebih suka mematikannya.";
 
 /* Statistics error for iOS <16 */
 "This feature requires iOS 16 or newer." = "Fitur ini memerlukan setidaknya iOS 16 atau yang lebih baru.";
@@ -1146,9 +1130,6 @@ Hit Distribution Stats: region */
 
 /* Request Log */
 "URL" = "URL";
-
-/* Missions Box: header, shown when a mission is not daily or weekly (should not happen unless Riot changes something) */
-"Uncategorized Missions" = "Misi yang tidak memiliki kategori";
 
 /* Shown when a match does not match the filter and its details have not been fetched. */
 "Unfetched" = "Data belum diambil";
@@ -1193,9 +1174,6 @@ Di situs tersebut, buka **Masuk Akun Riot** dan tentukan nama pengguna dan kata 
 /* placeholder */
 "Unknown Card" = "Kartu tidak diketahui";
 
-/* Store */
-"Unknown Offer" = "Penawaran tidak diketahui";
-
 /* No comment provided by engineer. */
 "Unknown Player" = "Pemain tidak diketahui";
 
@@ -1223,9 +1201,6 @@ Round Details: killed by unknown/unspecified weapon */
 
 /* No comment provided by engineer. */
 "Unknown bundle!" = "Bundle tidak diketahui!";
-
-/* Missions Box */
-"Unknown contract!" = "Kontrak tidak diketahui!";
 
 /* Store Bundle Details: should never show, but if Riot adds a new kind of item to a bundle, this would show */
 "Unknown item of type %@" = "Jenis %@ Tidak diketahui";

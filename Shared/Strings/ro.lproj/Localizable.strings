@@ -65,10 +65,6 @@
 /* Time Formatting: minutes, seconds, & milliseconds (used in round details view) */
 "%lld:%@.%@" = "%lld:%@.%@";
 
-/* Contract Progress Bar
-Missions Box */
-"%lld / %lld XP" = "%lld / %lld XP";
-
 /* Win Rate Stats by Loadout Delta: focused value (drag on graph) */
 "(%lld – %lld)" = "(%lld – %lld)";
 
@@ -110,17 +106,14 @@ Meciurile de Competitive de după cele de plasament pot fi totuși identificate 
 /* No comment provided by engineer. */
 "About Recon Bolt" = "Despre Recon Bolt";
 
+/* Store: accessory section */
+"Accessories" = "Accesorii";
+
+/* Store: Accessory List: title */
+"Accessory Store" = "Magazin de accesorii";
+
 /* Settings: section */
 "Accounts" = "Conturi";
-
-/* Contract Picker: button */
-"Activate" = "Activează";
-
-/* Contract Picker */
-"Active" = "Activ";
-
-/* Missions Box: header */
-"Active Contract" = "Contract Activ";
 
 /* Match List: accessibility label */
 "Add Bookmark" = "Adaugă un Bookmark";
@@ -139,12 +132,6 @@ Meciurile de Competitive de după cele de plasament pot fi totuși identificate 
 
 /* No comment provided by engineer. */
 "Agent Select" = "Agent Select";
-
-/* Contract Picker */
-"Agent Unlockable" = "Agent Deblocabil";
-
-/* Contract Picker */
-"Agent Unlocked" = "Agent Deblocat";
 
 /* Statistics filter: button */
 "Agents" = "Agenți";
@@ -212,8 +199,8 @@ Meciurile de Competitive de după cele de plasament pot fi totuși identificate 
 /* Settings: toggle */
 "Automatically Sign Back In" = "Conectați-vă automat din nou";
 
-/* Store: available currency */
-"Available:" = "Disponibil:";
+/* Bookmark/Player List: toggle */
+"Automatically Update Ranks" = "Actualizare automată a rank-urilor";
 
 /* Hit Distribution Stats: average HS% */
 "Average: %@" = "Media: %@";
@@ -271,6 +258,12 @@ Playtime Stats: section */
 /* Weapon Reference */
 "Category" = "Categorii";
 
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month with a colorful look! (Free during June)" = "Sărbătoriți luna mândriei LGBTQ cu un look colorat! (Gratuit în luna iunie)";
+
+/* App Icon Description: pride */
+"Celebrate LGBTQ Pride month, but in dark!" = "Sărbătoriți luna mândriei LGBTQ, dar pe întuneric!";
+
 /* No comment provided by engineer. */
 "Change Buddy" = "Schimbă Buddy";
 
@@ -307,9 +300,6 @@ Playtime Stats: section */
 /* No comment provided by engineer. */
 "Choose Title" = "Alegeți titlul";
 
-/* Contract Picker: title */
-"Choose a Contract" = "Alegeți un contract";
-
 /* Buddy Picker: alert shown when both instances of a buddy are in use */
 "Choose a weapon to take %@ from." = "Alege o armă de la care să iei %@.";
 
@@ -319,14 +309,8 @@ Playtime Stats: section */
 /* Skin Details: section */
 "Color Variants" = "Variante de Culoare";
 
-/* Contract Picker */
-"Completed" = "Finalizat";
-
 /* Storage Management: title for alert to confirm deleting some matches */
 "Confirm Delete" = "Confirmă Ștergerea";
-
-/* Missions Box */
-"Contract complete!" = "Contract finalizat!";
 
 /* Request Log: button to copy the request's body/contents (accessibility label) */
 "Copy Body" = "Copiază conținutul";
@@ -389,7 +373,7 @@ Playtime Stats: section */
 "Daily" = "Zilnic";
 
 /* Missions Box: header */
-"Daily Missions" = "Misiuni zilnice";
+"Daily Checkpoints" = "Puncte de control zilnice";
 
 /* Store */
 "Daily Offers" = "Oferte zilnice";
@@ -399,6 +383,9 @@ Playtime Stats: section */
 
 /* App Theme */
 "Dark Mode" = "Modul întunecat";
+
+/* App Icon Name */
+"Dark Rainbow" = "Curcubeu întunecat";
 
 /* Stats: match loading */
 "Data going back to %@" = "Date care se întorc la %@";
@@ -519,9 +506,6 @@ RAPORTUL TĂU DE EROARE AICI
 /* No comment provided by engineer. */
 "Force Refresh Widgets" = "Forțați reîmprospătarea widget-urilor";
 
-/* Contract Picker */
-"Free Agent" = "Agent liber";
-
 /* Storage Management: button to free up a certain amount of space */
 "Free up these %@" = "Eliberați aceste %@";
 
@@ -619,9 +603,6 @@ Weapon Reference: stats */
 
 /* Bookmark/Player List: player level */
 "Level %lld" = "Nivel %lld";
-
-/* Contract Progress Bar */
-"Level %lld / %lld" = "Nivel %lld/%lld";
 
 /* No comment provided by engineer. */
 "Lifetime Peak" = "Lifetime Peak";
@@ -738,9 +719,6 @@ Dacă nu știi numele tău de utilizator sau nu ai unul, poți rezolva asta la [
 /* Asset Management */
 "Missing assets!" = "Resurse Lipsă!";
 
-/* Missions Box */
-"Missing progress for contract!" = "Lipsesc progresele pentru contract!";
-
 /* No comment provided by engineer. */
 "Missing season data!" = "Datele sezonului lipsesc!";
 
@@ -779,9 +757,6 @@ Dacă nu știi numele tău de utilizator sau nu ai unul, poți rezolva asta la [
 
 /* Gun Customizer: shown when a weapon has no buddy active */
 "No buddy selected!" = "Niciun buddy selectat!";
-
-/* Missions Box */
-"No contract active!" = "Nici un contract activ!";
 
 /* Win Rate Stats: by map */
 "No data" = "Nu există date";
@@ -892,6 +867,9 @@ Playtime Stats: section */
 
 /* Statistics filter: button */
 "Queues" = "Queues";
+
+/* App Icon Name */
+"Rainbow" = "Curcubeu";
 
 /* Weapon Reference: stats */
 "Range" = "Distanță";
@@ -1051,6 +1029,12 @@ Login Form: button */
 /* Hit Distribution Stats: smoothing slider */
 "Smoothing" = "Smoothing";
 
+/* App Icon Picker: section */
+"Special Icons" = "Icoane speciale";
+
+/* App Icon Picker: section footer */
+"Special Icons are available year-round for Pro users, while free users can only select them during a certain time window." = "Icoanele speciale sunt disponibile pe tot parcursul anului pentru utilizatorii Pro, în timp ce utilizatorii gratuiți le pot selecta doar în timpul unei anumite perioade de timp.";
+
 /* No comment provided by engineer. */
 "Spectator" = "Spectator";
 
@@ -1093,9 +1077,6 @@ Login Form: button */
 /* Pro Store */
 "Support Further Development!" = "Sprijină dezvoltarea!";
 
-/* Missions Box: button */
-"Switch Contract" = "Schimba Contractul";
-
 /* Login Form: is this safe? */
 "TL;DR: you'll have to take my word for it, but Riot doesn't seem to mind." = "TL;DR: va trebui să mă credeți pe cuvânt, dar Riot nu pare să se supere.";
 
@@ -1111,7 +1092,7 @@ Login Form: button */
 /* App Icon Description: default */
 "The default look of Recon Bolt." = "Aspectul implicit al lui Recon Bolt.";
 
-/* No comment provided by engineer. */
+/* App Icon Picker: section footer */
 "The pro version lets you change the app icon! More icons might be coming in future updates." = "Versiunea pro vă permite să schimbați pictograma aplicației! Este posibil să apară mai multe pictograme în actualizările viitoare.";
 
 /* Settings: picker */
@@ -1119,6 +1100,9 @@ Login Form: button */
 
 /* No comment provided by engineer. */
 "These are the last %lld requests sent by the app, along with their responses." = "Acestea sunt ultimele cereri %lld trimise de aplicație, împreună cu răspunsurile acestora.";
+
+/* Bookmark/Player List: toggle description */
+"This can cause a lot of requests. If you have many bookmarks or are often hitting the rate limit, you might prefer to turn this off." = "Acest lucru poate cauza o mulțime de cereri. Dacă aveți multe marcaje sau dacă atingeți des limita de viteză, este posibil să preferați să dezactivați această opțiune.";
 
 /* Statistics error for iOS <16 */
 "This feature requires iOS 16 or newer." = "Această funcție necesită iOS 16 sau o versiune mai nouă.";
@@ -1147,9 +1131,6 @@ Hit Distribution Stats: region */
 
 /* Request Log */
 "URL" = "URL";
-
-/* Missions Box: header, shown when a mission is not daily or weekly (should not happen unless Riot changes something) */
-"Uncategorized Missions" = "Misiuni necategorizate";
 
 /* Shown when a match does not match the filter and its details have not been fetched. */
 "Unfetched" = "Neîncercat";
@@ -1194,9 +1175,6 @@ Pe site-ul respectiv, navigați la **Riot Account Sign-in** și setați-vă un n
 /* placeholder */
 "Unknown Card" = "Card necunoscut";
 
-/* Store */
-"Unknown Offer" = "Ofertă Necunoscută";
-
 /* No comment provided by engineer. */
 "Unknown Player" = "Jucător necunoscut";
 
@@ -1224,9 +1202,6 @@ Round Details: killed by unknown/unspecified weapon */
 
 /* No comment provided by engineer. */
 "Unknown bundle!" = "Bundle necunoscut!";
-
-/* Missions Box */
-"Unknown contract!" = "Contract necunoscut!";
 
 /* Store Bundle Details: should never show, but if Riot adds a new kind of item to a bundle, this would show */
 "Unknown item of type %@" = "Element necunoscut de tip %@";

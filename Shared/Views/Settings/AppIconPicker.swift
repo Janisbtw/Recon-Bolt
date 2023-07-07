@@ -15,10 +15,23 @@ struct AppIconPicker: View {
 			
 			Section {
 				cell(for: .proBlue)
+				if isProud {
+					cell(for: .prideDark)
+				}
 			} header: {
 				Text("Pro Icons", comment: "App Icon Picker: section")
 			} footer: {
-				Text("The pro version lets you change the app icon! More icons might be coming in future updates.")
+				Text("The pro version lets you change the app icon! More icons might be coming in future updates.", comment: "App Icon Picker: section footer")
+			}
+			
+			if isProud {
+				Section {
+					cell(for: .pride)
+				} header: {
+					Text("Special Icons", comment: "App Icon Picker: section")
+				} footer: {
+					Text("Special Icons are available year-round for Pro users, while free users can only select them during a certain time window.", comment: "App Icon Picker: section footer")
+				}
 			}
 		}
 		.navigationTitle("Choose App Icon")
@@ -26,7 +39,7 @@ struct AppIconPicker: View {
 	}
 	
 	func cell(for icon: AppIcon) -> some View {
-		let isAllowed = ownsProVersion || icon.key == nil || isInSwiftUIPreview
+		let isAllowed = ownsProVersion || icon.isFree || isInSwiftUIPreview
 		return AsyncButton {
 			do {
 				try await manager.select(icon)
@@ -61,6 +74,8 @@ struct AppIconPicker: View {
 	}
 }
 
+private let isProud = Locale.current.identifier.starts(with: "ru-")
+
 extension AppIcon {
 	struct Thumbnail: View {
 		var icon: AppIcon
@@ -71,13 +86,13 @@ extension AppIcon {
 			return Image("app icons/\(icon.key ?? "AppIcon")")
 				.resizable()
 				.aspectRatio(contentMode: .fit)
-				.background(Color.gray)
 				.mask { squircle }
 				.overlay {
 					squircle
 						.strokeBorder(.white.opacity(0.1), lineWidth: 1)
 						.blendMode(.plusLighter)
 				}
+				.shadow(color: .black.opacity(0.1), radius: 2, x: 0, y: 2)
 				.frame(width: size, height: size)
 		}
 	}
@@ -102,19 +117,30 @@ final class AppIconManager: ObservableObject {
 }
 
 struct AppIcon: Identifiable, Equatable {
-	static let all = [`default`, proBlue]
+	static let all = [`default`, pride, proBlue, prideDark]
 	static let `default` = Self(
-		key: nil,
+		key: nil, isFree: true,
 		name: Text("Default", comment: "App Icon Name"),
 		description: Text("The default look of Recon Bolt.", comment: "App Icon Description: default")
 	)
+	static let pride = Self(
+		key: "AppIconPride", isFree: Calendar.current.date(.now, matchesComponents: .init(month: 6)), // free during pride month
+		name: Text("Rainbow", comment: "App Icon Name"),
+		description: Text("Celebrate LGBTQ Pride month with a colorful look! (Free during June)", comment: "App Icon Description: pride")
+	)
 	static let proBlue = Self(
-		key: "AppIconProBlue",
+		key: "AppIconProBlue", isFree: false,
 		name: Text("Pro Blue", comment: "App Icon Name"),
 		description: Text("Show off your pro status with an exclusive icon!", comment: "App Icon Description: pro blue")
 	)
+	static let prideDark = Self(
+		key: "AppIconPrideDark", isFree: false,
+		name: Text("Dark Rainbow", comment: "App Icon Name"),
+		description: Text("Celebrate LGBTQ Pride month, but in dark!", comment: "App Icon Description: pride")
+	)
 	
 	var key: String?
+	var isFree: Bool
 	var name: Text
 	var description: Text
 	
